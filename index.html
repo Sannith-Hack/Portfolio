@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Icon -->
+    <link rel="stylesheet" href="style.css" />
+    <title>SANNITH</title>
+  </head>
+  <body>
+    <video autoplay muted loop id="background-video"> <source src="assets/images/12686138_3840_2160_30fps.mp4" type="video/mp4"> </video>
+    <header>
+      <div class="logo">
+        <a href="/">Sannith</a>
+      </div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skill">Skill</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="extra-nav">
+        <button id="get-in-touch-btn">Get In Touch</button>
+      </div>
+
+      <div id="menu" class="hamburger-menu">
+        <svg
+          width="35px"
+          height="35px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4 18L20 18"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 12L20 12"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 6L20 6"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+
+      <!-- Mobile Nav -->
+      <div id="nav-mobile" class="mobile-nav">
+        <div id="close-mobile" class="close">
+          <svg
+            width="800px"
+            height="800px"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #ffffff;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 2px;
+                }
+              </style>
+            </defs>
+
+            <title />
+
+            <g id="cross">
+              <line class="cls-1" x1="7" x2="25" y1="7" y2="25" />
+
+              <line class="cls-1" x1="7" x2="25" y1="25" y2="7" />
+            </g>
+          </svg>
+        </div>
+        <ul>
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skilll">Skilll</a></li>
+          <li><a class="nav-link" href="#project">Project</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="content">
+          <svg viewBox="0 0 1500 500" data-aos="fade-down">
+            <text x="50%" y="50%" text-anchor="middle">SANNITH</text>
+          </svg>
+          <h1 data-aos="zoom-in-up">
+            Delivering Custom Data Analyst and Backend Solutions that <span>Stand Out</span>
+          </h1>
+          <button data-aos="zoom-out" id="show-work-btn"><span>Show my Work</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="content">
+          <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+            About Me
+          </h1>
+          <div class="about-me">
+            <div data-aos="zoom-out-right" data-aos-delay="300" class="profile">
+              <div class="image-box">
+                <img src="assets/images/img.jpg" alt="profile" />
+              </div>
+            </div>
+
+            <div
+              data-aos="zoom-in-left"
+              data-aos-delay="300"
+              class="description"
+            >
+              <div class="name-role">
+                <h1>Sannith</h1>
+                <div class="role">
+                  <h2>BackEnd Developer</h2>
+                </div>
+              </div>
+              <p>
+                Hi, I'm P. Sannith. I code every day (440+ day streak) and specialize in the "engine room" of applications—backend logic, database optimization, and data processing.
+                <br /><br />
+                While I have experience across the full stack (including React/Next.js), my core expertise and passion lie in Backend Engineering and Database Management. I have successfully architected secure authentication systems and managed complex databases using Supabase, PostgreSQL, MySQL, and Microsoft SQL Server.
+               <br /><br />                
+                I specialize in building robust server-side architecture and managing complex SQL/NoSQL databases. My experience ranges from deploying LAMP stacks on AWS to analyzing data for forensic technology simulations with Deloitte. Currently focused on mastering high-performance databases and AI integration.
+               <br /><br />
+                I bridge the gap between complex data and functional software. My background includes internships in Cloud Computing (AWS/LAMP Stack) and job simulations in Data Analytics (Deloitte) and Cybersecurity (Tata).
+               <br /><br />
+                Beyond coding, I value creativity, problem-solving, and continuous learning. I enjoy collaborating with clients to understand their vision and translating it into designs that are both functional and aesthetically pleasing. I also keep myself updated with the latest trends in front-end technologies to ensure that my work remains relevant and impactful.
+               <br /><br />
+                I am currently looking for opportunities to leverage my skills in database indexing, backend logic, and data analysis to solve complex problems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skill" class="skill">
+      <div class="container">
+        <div class="content">
+          <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+            Skill
+          </h1>
+
+          <div class="skills" data-aos-delay="500">
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/html5.svg" alt="html" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/css3.svg" alt="css" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/javascript.svg" alt="javascript" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/typescript.svg" alt="typescript" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/react.svg" alt="react" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/docker.svg" alt="next" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/supabase.svg" alt="alpinejs" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/java.svg" alt="tailwind" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/mysql.svg" alt="mysql" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/postgresql.svg" alt="postgresql" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/Node.js.svg" alt="figma" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assets/icon/github.svg" alt="github" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project" class="project">
+      <div class="container">
+        <div class="content">
+          <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+            Project
+          </h1>
+
+          <div class="projects">
+            <div data-aos="zoom-in-down" data-aos-delay="300" class="card">
+              <img src="assets/images/Cleveroad.jpg" alt="project" />
+
+              <div class="description">
+                <h1>E-commerce Website</h1>
+                <p>
+                  Built the backend logic for a secondhand marketplace with secure auth and product management.
+                </p>
+                <div class="action">
+                  <button>Github</button>
+                  <button>Demo</button>
+                </div>
+              </div>
+            </div>
+            <div data-aos="zoom-in-down" data-aos-delay="400" class="card">
+              <img src="assets/images/Dashboard - Social Media Analytics.jpg" alt="project" />
+
+              <div class="description">
+                <h1>NCC Dashboard</h1>
+                <p>
+                  NCC Air Wing Portal: Engineered a student information system using Supabase for real-time database management.
+                </p>
+                <div class="action">
+                  <button>Github</button>
+                  <button>Demo</button>
+                </div>
+              </div>
+            </div>
+            <div data-aos="zoom-in-down" data-aos-delay="500" class="card">
+              <img src="assets/images/Task manager app.jpg" alt="project" />
+
+              <div class="description">
+                <h1>Task Manager</h1>
+                <p>
+                  Manage daily tasks, deadlines, and priorities with a clean interface.
+                </p>
+                <div class="action">
+                  <button>Github</button>
+                  <button>Demo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="content">
+          <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+            Contact Me
+          </h1>
+          <div class="contact-wrapper">
+            <div class="contact-info" data-aos="zoom-in-down" data-aos-delay="300">
+              <h3>Contact Information</h3>
+              <p><i class="fas fa-envelope"></i> Email: sunnysunnit@gmail.com</p>
+              <p><i class="fas fa-phone"></i> Phone: +91 7498461916</p>
+              <p><i class="fab fa-github"></i> GitHub: Sannith-Hack</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div data-aos="fade-up" data-aos-duration="1000" class="container">
+        <div class="profile">
+          <div class="logo">
+            <a href="">Amine</a>
+          </div>
+
+          <!-- Short About -->
+          <p>
+            Backend Engineer and Data Analytics enthusiast focused on optimizing complex databases and server-side logic. With practical experience in the LAMP stack and AWS, I bridge the gap between scalable infrastructure and data insights. My technical foundation includes Java, Python, and SQL, applied to build resilient systems like EcoHaven.
+          </p>
+
+          <!-- Social Media -->
+          <div class="social-media-container">
+            <div class="social-media">
+              <!-- Add Instagram hyperlink here -->
+              <a href="https://www.instagram.com/sunebhai_mpc/" target="_blank">
+                <box-icon color="#fff" type="logo" name="instagram"></box-icon>
+              </a>
+            </div>
+            <div class="social-media">
+              <!-- Add Youtube hyperlink here -->
+              <a href="https://www.youtube.com/@Ronnyroy" target="_blank">
+                <box-icon color="#fff" name="youtube" type="logo"></box-icon>
+              </a>
+            </div>
+            <div class="social-media">
+              <!-- Add Linkedin hyperlink here -->
+              <a href="https://www.linkedin.com/in/sannith-pasunooti-183b86302/" target="_blank">
+                <box-icon type='logo' name='linkedin' color="#fff"></box-icon>
+              </a>
+            </div>
+            <div class="social-media">
+              <!-- Add Github hyperlink here -->
+              <a href="https://github.com/Sannith-Hack" target="_blank">
+                <box-icon type='logo' name='github' color="#fff"></box-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="link-container">
+          <div class="information">
+            <h1>Skill</h1>
+            <ul>
+              <li>
+                <a href="#">React.js</a>
+              </li>
+              <li>
+                <a href="#">Next.js</a>
+              </li>
+              <li>
+                <a href="#">Node.js</a>
+              </li>
+              <li>
+                <a href="#">MySQL</a>
+              </li>
+              <li>
+                <a href="#">Typescript</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="resource">
+            <h1>Technology</h1>
+            <ul>
+              <li>
+                <a href="#">Render</a>
+              </li>
+              <li>
+                <a href="#">AWS</a>
+              </li>
+              <li>
+                <a href="#">Linux</a>
+              </li>
+              <li>
+                <a href="#">Github</a>
+              </li>
+              <li>
+                <a href="#">Shadcn UI</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="navigation">
+            <h1>Navigation</h1>
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Skill</a>
+              </li>
+              <li>
+                <a href="#">Project</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Box Icon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
