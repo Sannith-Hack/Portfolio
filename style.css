@@ -23,6 +23,7 @@ html {
 body {
   background-color: #000;
   color: #fff;
+  overflow-x: hidden;
 }
 
 #background-video{
@@ -37,6 +38,12 @@ body {
 
 .container {
   padding: 1rem 6rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 1rem 1.5rem;
+  }
 }
 
 .title {
@@ -157,14 +164,16 @@ header .mobile-nav {
   gap: 8px;
 }
 
-.hero .container .content svg {
+.hero .container .content .hero-name-svg {
+  width: 100%;
+  height: auto;
   margin-bottom: -9rem;
 }
 
-.hero .container .content svg text {
+.hero .container .content .hero-name-svg text {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 132px;
+  font-size: 200px;
   animation: stroke 5s infinite alternate;
 }
 
@@ -177,15 +186,30 @@ header .mobile-nav {
 }
 
 @media screen and (max-width: 768px) {
-  .hero .container .content svg {
-    margin-bottom: -4rem;
+  .hero .container .content .hero-name-svg {
+    margin-bottom: -2rem;
   }
+  
+  .hero .container .content .hero-name-svg text {
+    font-size: 300px;
+  }
+
   .hero .container .content h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    line-height: 1.4;
     width: 100%;
   }
 }
 
+@media screen and (max-width: 480px) {
+  .hero .container .content .hero-name-svg {
+    margin-bottom: -1rem;
+  }
+
+  .hero .container .content .hero-name-svg text {
+    font-size: 350px;
+  }
+}
 
 .hero .container .content h1 span {
   background: #fff;
@@ -360,11 +384,11 @@ header .mobile-nav {
 
 .project .container .content .projects {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   align-items: center;
   justify-content: center;
   gap: 20px;
-  width: 85%;
+  width: 90%;
 }
 
 .project .container .content .projects .card {
@@ -402,27 +426,34 @@ header .mobile-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 12px;
+  margin-top: auto;
+  gap: 10px;
 }
 
+.project .container .content .projects .card .description .action a,
 .project .container .content .projects .card .description .action button {
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12px;
+  padding: 10px;
   border: 2px solid #fff;
   border-radius: 12px;
   background: transparent;
   color: #fff;
-  width: 25%;
-  transition: 0.3s linear;
+  width: 48%;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
+.project .container .content .projects .card .description .action a:hover,
 .project .container .content .projects .card .description .action button:hover {
   background: #fff;
   color: #000;
-  transition: 0.3s linear;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
 }
 
 
@@ -452,28 +483,6 @@ header .mobile-nav {
 
 .project .projects .card:hover img {
   transform: scale(1.05);
-}
-
-/* Buttons hover inside card */
-.project .projects .card .action button {
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-  border: 2px solid #fff;
-  border-radius: 12px;
-  background: transparent;
-  color: #fff;
-  width: 25%;
-  transition: all 0.3s ease;
-}
-
-.project .projects .card .action button:hover {
-  background: #fff;
-  color: #000;
-  transform: translateY(-3px);
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
 }
 
 .contact .container .content .contact-form .input {
@@ -761,6 +770,11 @@ footer .container .link-container .navigation ul li a {
     width: 100%;
   }
 
+  .skill .container .content .skills {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    width: 80%;
+  }
+
   footer .container .link-container .information ul li::after,
   footer .container .link-container .resource ul li::after,
   footer .container .link-container .navigation ul li::after {
@@ -769,8 +783,29 @@ footer .container .link-container .navigation ul li a {
 }
 
 @media screen and (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .project .container .content .projects {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .contact-info {
+    width: 100%;
+    text-align: center;
+  }
+
   header .mobile-nav ul li {
-    width: 35%;
+    width: 50%;
   }
 
   .about .container .content .about-me {
@@ -798,15 +833,48 @@ footer .container .link-container .navigation ul li a {
     align-items: center;
   }
 
+  .about .container .content .about-me .description .name-role h1 {
+    font-size: 2.2rem;
+  }
+
+  .about .container .content .about-me .description .name-role .role h2 {
+    font-size: 1.5rem;
+  }
+
+  .skill .container .content .skills {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%;
+  }
+
   footer .container {
-    padding: 1rem 2rem;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
   }
+
   footer .container .profile {
-    width: 50%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
   }
+
   footer .container .link-container {
     flex-direction: column;
     width: 100%;
+    gap: 2rem;
+  }
+
+  footer .container .link-container .information,
+  footer .container .link-container .resource,
+  footer .container .link-container .navigation {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  footer .container .link-container .information h1,
+  footer .container .link-container .resource h1,
+  footer .container .link-container .navigation h1 {
+    justify-content: center;
   }
 
   footer .container .link-container .information ul li::after,
@@ -816,108 +884,36 @@ footer .container .link-container .navigation ul li a {
   }
 }
 
-@media screen and (max-width: 610px) {
-  footer .container .profile,
-  footer .container .link-container {
-    width: 100%;
-  }
-
-  footer .container .link-container .information,
-  footer .container .link-container .resource,
-  footer .container .link-container .navigation {
-    width: 30%;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .skill .container .content .skills {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .skill .container .content .skills {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 450px) {
   .skill .container .content .skills {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-}
-
-@media screen and (max-width: 768px) {
-  .contact .container .content .contact-form {
-    width: 100%;
-  }
-  .contact .container .content .contact-form .input input {
-    width: 100%;
-  }
-}
-  header .mobile-nav ul li {
-    width: 50%;
-  }
-
-  footer .container .link-container .information,
-  footer .container .link-container .resource,
-  footer .container .link-container .navigation {
-    width: 50%;
+  
+  header .mobile-nav ul li a {
+    font-size: 28px;
   }
 }
 
 .contact-wrapper {
   display: flex;
-  justify-content: space-between;
-  width: 80%;
+  justify-content: center;
+  width: 100%;
   margin-top: 2rem;
 }
 
-.contact-form {
-  width: 48%;
-}
-
 .contact-info {
-  width: 48%;
-}
-
-.contact-form h3, .contact-info h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.form-group {
-  margin-bottom: 1rem;
-}
-
-.form-group input, .form-group textarea {
   width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #fff;
-  background-color: transparent;
-  color: #fff;
-  border-radius: 5px;
+  max-width: 500px;
+  background-color: rgba(25, 25, 25, 0.6);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  text-align: center;
 }
 
-.form-group input::placeholder, .form-group textarea::placeholder {
-  color: #ccc;
-}
-
-.form-group textarea {
-  height: 150px;
-  resize: none;
-}
-
-.contact-form button {
-  padding: 0.75rem 1.5rem;
-  background-color: #fff;
-  color: #000;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
+.contact-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .contact-info p {
@@ -927,4 +923,10 @@ footer .container .link-container .navigation ul li a {
 
 .contact-info i {
   margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .project .container .content .projects .card {
+    height: auto;
+  }
 }
