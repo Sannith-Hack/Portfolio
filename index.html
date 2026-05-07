@@ -108,7 +108,12 @@
           <h1 data-aos="zoom-in-up">
             Delivering Custom Data Analyst and Backend Solutions that <span>Stand Out</span>
           </h1>
-          <button data-aos="zoom-out" id="show-work-btn"><span>Show my Work</span></button>
+          <div class="hero-btns" data-aos="zoom-out">
+            <button id="show-work-btn"><span>Show my Work</span></button>
+            <a href="assets/Sannith_Resume.pdf" download class="download-btn">
+              <i class="fas fa-download"></i> <span>Download CV</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -119,37 +124,64 @@
           <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
             About Me
           </h1>
-          <div class="about-me">
-            <div data-aos="zoom-out-right" data-aos-delay="300" class="profile">
-              <div class="image-box">
-                <img src="assets/images/img.jpg" alt="profile" />
+          <div class="about-me-wrapper">
+            <div class="about-main" data-aos="fade-right">
+              <div class="profile-card">
+                <div class="image-box">
+                  <img src="assets/images/img.jpg" alt="profile" />
+                </div>
+                <div class="name-role">
+                  <h1>Sannith</h1>
+                  <div class="role">
+                    <h2>BackEnd Developer</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="description-text">
+                <p>
+                  Hi, I'm P. Sannith. I code every day (440+ day streak) and specialize in the "engine room" of applications—backend logic, database optimization, and data processing.
+                  <br /><br />
+                  While I have experience across the full stack (including React/Next.js), my core expertise and passion lie in Backend Engineering and Database Management. I have successfully architected secure authentication systems and managed complex databases using Supabase, PostgreSQL, MySQL, and Microsoft SQL Server.
+                </p>
               </div>
             </div>
 
-            <div
-              data-aos="zoom-in-left"
-              data-aos-delay="300"
-              class="description"
-            >
-              <div class="name-role">
-                <h1>Sannith</h1>
-                <div class="role">
-                  <h2>BackEnd Developer</h2>
+            <div class="about-details" data-aos="fade-left">
+              <!-- GitHub Stats -->
+              <div class="github-stats-box">
+                <h3>GitHub Insights</h3>
+                <div class="stats-container">
+                  <div class="stats-card-wrapper">
+                    <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Sannith-Hack&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" onerror="this.src='https://github-readme-stats-git-master-anuraghazra.vercel.app/api?username=Sannith-Hack&show_icons=true&theme=radical&hide_border=true'" />
+                  </div>
+                  <div class="stats-card-wrapper graph-wrapper">
+                    <img src="https://github-readme-activity-graph.vercel.app/graph?username=Sannith-Hack&theme=react-dark&bg_color=1a1a1a&hide_border=true" alt="GitHub Activity Graph" />
+                  </div>
                 </div>
               </div>
-              <p>
-                Hi, I'm P. Sannith. I code every day (440+ day streak) and specialize in the "engine room" of applications—backend logic, database optimization, and data processing.
-                <br /><br />
-                While I have experience across the full stack (including React/Next.js), my core expertise and passion lie in Backend Engineering and Database Management. I have successfully architected secure authentication systems and managed complex databases using Supabase, PostgreSQL, MySQL, and Microsoft SQL Server.
-               <br /><br />                
-                I specialize in building robust server-side architecture and managing complex SQL/NoSQL databases. My experience ranges from deploying LAMP stacks on AWS to analyzing data for forensic technology simulations with Deloitte. Currently focused on mastering high-performance databases and AI integration.
-               <br /><br />
-                I bridge the gap between complex data and functional software. My background includes internships in Cloud Computing (AWS/LAMP Stack) and job simulations in Data Analytics (Deloitte) and Cybersecurity (Tata).
-               <br /><br />
-                Beyond coding, I value creativity, problem-solving, and continuous learning. I enjoy collaborating with clients to understand their vision and translating it into designs that are both functional and aesthetically pleasing. I also keep myself updated with the latest trends in front-end technologies to ensure that my work remains relevant and impactful.
-               <br /><br />
-                I am currently looking for opportunities to leverage my skills in database indexing, backend logic, and data analysis to solve complex problems.
-              </p>
+
+              <!-- Education Timeline -->
+              <div class="education-box">
+                <h3>Academic Journey</h3>
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="timeline-content">
+                      <h4>B.Tech in CSE</h4>
+                      <p>KUCE&T (Kakatiya University)</p>
+                      <span>2023 - 2027</span>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-school"></i></div>
+                    <div class="timeline-content">
+                      <h4>Intermediate (MPC)</h4>
+                      <p>Geesukunda Junior College</p>
+                      <span>2021 - 2023</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -160,45 +192,49 @@
       <div class="container">
         <div class="content">
           <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
-            Skill
+            Technical Expertise
           </h1>
 
-          <div class="skills" data-aos-delay="500">
-            <div data-aos="zoom-in-down" class="skill-box">
-              <img src="assets/icon/html5.svg" alt="html" />
+          <div class="skills-categories-large">
+            <div class="category-card" data-aos="flip-left">
+              <div class="category-header">
+                <i class="fas fa-server"></i>
+                <h3>Backend & DB</h3>
+              </div>
+              <div class="skills-display">
+                <div class="skill-item"><img src="assets/icon/java.svg" alt="Java" /><p>Java</p></div>
+                <div class="skill-item"><img src="assets/icon/mysql.svg" alt="MySQL" /><p>MySQL</p></div>
+                <div class="skill-item"><img src="assets/icon/postgresql.svg" alt="PostgreSQL" /><p>PostgreSQL</p></div>
+                <div class="skill-item"><img src="assets/icon/supabase.svg" alt="Supabase" /><p>Supabase</p></div>
+                <div class="skill-item"><img src="assets/icon/Node.js.svg" alt="Node.js" /><p>Node.js</p></div>
+              </div>
             </div>
-            <div data-aos="zoom-in-down" class="skill-box">
-              <img src="assets/icon/css3.svg" alt="css" />
+
+            <div class="category-card" data-aos="flip-left" data-aos-delay="100">
+              <div class="category-header">
+                <i class="fas fa-code"></i>
+                <h3>Frontend</h3>
+              </div>
+              <div class="skills-display">
+                <div class="skill-item"><img src="assets/icon/html5.svg" alt="HTML5" /><p>HTML5</p></div>
+                <div class="skill-item"><img src="assets/icon/css3.svg" alt="CSS3" /><p>CSS3</p></div>
+                <div class="skill-item"><img src="assets/icon/javascript.svg" alt="JavaScript" /><p>JS</p></div>
+                <div class="skill-item"><img src="assets/icon/typescript.svg" alt="TypeScript" /><p>TS</p></div>
+                <div class="skill-item"><img src="assets/icon/react.svg" alt="React" /><p>React</p></div>
+              </div>
             </div>
-            <div data-aos="zoom-in-down" class="skill-box">
-              <img src="assets/icon/javascript.svg" alt="javascript" />
-            </div>
-            <div data-aos="zoom-in-down" class="skill-box">
-              <img src="assets/icon/typescript.svg" alt="typescript" />
-            </div>
-            <div data-aos="zoom-in-down" class="skill-box">
-              <img src="assets/icon/react.svg" alt="react" />
-            </div>
-            <div data-aos="zoom-in-down" class="skill-box">
-              <img src="assets/icon/docker.svg" alt="next" />
-            </div>
-            <div data-aos="zoom-in-down" class="skill-box">
-              <img src="assets/icon/supabase.svg" alt="alpinejs" />
-            </div>
-            <div data-aos="zoom-in-down" class="skill-box">
-              <img src="assets/icon/java.svg" alt="tailwind" />
-            </div>
-            <div data-aos="zoom-in-down" class="skill-box">
-              <img src="assets/icon/mysql.svg" alt="mysql" />
-            </div>
-            <div data-aos="zoom-in-down" class="skill-box">
-              <img src="assets/icon/postgresql.svg" alt="postgresql" />
-            </div>
-            <div data-aos="zoom-in-down" class="skill-box">
-              <img src="assets/icon/Node.js.svg" alt="figma" />
-            </div>
-            <div data-aos="zoom-in-down" class="skill-box">
-              <img src="assets/icon/github.svg" alt="github" />
+
+            <div class="category-card" data-aos="flip-left" data-aos-delay="200">
+              <div class="category-header">
+                <i class="fas fa-tools"></i>
+                <h3>DevOps & Tools</h3>
+              </div>
+              <div class="skills-display">
+                <div class="skill-item"><img src="assets/icon/docker.svg" alt="Docker" /><p>Docker</p></div>
+                <div class="skill-item"><img src="assets/icon/github.svg" alt="GitHub" /><p>GitHub</p></div>
+                <div class="skill-item"><i class="fab fa-linux fa-3x"></i><p>Linux</p></div>
+                <div class="skill-item"><i class="fab fa-aws fa-3x"></i><p>AWS</p></div>
+              </div>
             </div>
           </div>
         </div>
@@ -267,6 +303,106 @@
                   <a href="https://github.com/GouthamA15/KUCET_College_Management_System.git" target="_blank">Github</a>
                   <a href="#" class="demo-link">Demo</a>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Gallery -->
+    <section id="certifications" class="certifications">
+      <div class="container">
+        <div class="content">
+          <h1 data-aos="zoom-in-down" class="title">Certifications & Badges</h1>
+          <div class="badges-gallery" data-aos="fade-up">
+            <div class="badge-item"><i class="fas fa-shield-alt fa-3x"></i><p>Tata Cybersecurity</p></div>
+            <div class="badge-item"><i class="fas fa-robot fa-3x"></i><p>Google AI/ML</p></div>
+            <div class="badge-item"><i class="fas fa-brain fa-3x"></i><p>Agentic AI (Brain O Vision)</p></div>
+            <div class="badge-item"><i class="fas fa-database fa-3x"></i><p>SQL Master</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Deep Dive -->
+    <section id="deep-dive" class="deep-dive">
+      <div class="container">
+        <div class="content">
+          <h1 data-aos="zoom-in-down" class="title">How I Solve Problems</h1>
+          <div class="problem-solution-card" data-aos="fade-up">
+            <div class="problem">
+              <h3><i class="fas fa-bug"></i> The Problem: Slow Database Queries</h3>
+              <p>In a recent project, fetching user analytics was taking >2 seconds due to unoptimized joins across 3 large tables (1M+ rows).</p>
+            </div>
+            <div class="solution">
+              <h3><i class="fas fa-lightbulb"></i> The Solution: Indexing & Views</h3>
+              <p>I introduced composite indexes on the frequently queried columns and created a materialized view for the analytics dashboard.</p>
+              <pre><code>CREATE MATERIALIZED VIEW user_analytics AS
+SELECT u.id, COUNT(a.action), SUM(p.amount)
+FROM users u
+JOIN actions a ON u.id = a.user_id
+GROUP BY u.id;
+-- Query time reduced to ~15ms!</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive SQL Playground -->
+    <section id="sql-playground" class="sql-playground">
+      <div class="container">
+        <div class="content">
+          <h1 data-aos="zoom-in-down" class="title">Interactive SQL Console</h1>
+          <p data-aos="fade-up" style="text-align: center; color: #a0a0a0; margin-bottom: 20px;">Try querying my mock 'projects' database!</p>
+          <div class="console-wrapper" data-aos="zoom-in">
+            <div class="console-input">
+              <span class="prompt">user@sannith-db:~#</span>
+              <select id="sql-query-select">
+                <option value="SELECT * FROM projects WHERE type = 'Backend';">SELECT * FROM projects WHERE type = 'Backend';</option>
+                <option value="SELECT title, tech FROM projects ORDER BY date DESC;">SELECT title, tech FROM projects ORDER BY date DESC;</option>
+                <option value="SELECT COUNT(*) FROM projects WHERE status = 'Completed';">SELECT COUNT(*) FROM projects WHERE status = 'Completed';</option>
+              </select>
+              <button id="run-sql-btn">Run Query</button>
+            </div>
+            <div class="console-output" id="sql-output">
+              > Ready for query...
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live System Status (API Mock) -->
+    <section id="system-status" class="system-status">
+      <div class="container">
+        <div class="content">
+          <h1 data-aos="zoom-in-down" class="title">Live System Status</h1>
+          <div class="status-grid" id="status-grid" data-aos="fade-up">
+             <!-- Populated by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Terminal easter egg -->
+    <section id="terminal" class="terminal-section">
+      <div class="container">
+        <div class="content">
+          <h1 data-aos="zoom-in-down" class="title">Developer Console</h1>
+          <div class="terminal-window" data-aos="fade-up">
+            <div class="terminal-header">
+              <span class="btn close"></span>
+              <span class="btn minimize"></span>
+              <span class="btn maximize"></span>
+              <span class="term-title">bash - sannith@portfolio:~</span>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+              <p>Welcome to SannithOS v1.0. Type 'help' to see available commands.</p>
+              <div class="input-line" id="terminal-input-line">
+                <span class="prompt">sannith@portfolio:~$</span>
+                <input type="text" id="terminal-input" autocomplete="off" />
               </div>
             </div>
           </div>
@@ -369,9 +505,6 @@
               </li>
               <li>
                 <a href="#">Github</a>
-              </li>
-              <li>
-                <a href="#">Shadcn UI</a>
               </li>
             </ul>
           </div>
