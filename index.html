@@ -6,6 +6,23 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Chart.js & Mermaid -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ 
+        startOnLoad: true, 
+        theme: 'base',
+        themeVariables: {
+          primaryColor: '#1e1e1e',
+          primaryTextColor: '#ffffff',
+          primaryBorderColor: '#ffffff',
+          lineColor: '#ffffff',
+          secondaryColor: '#333333',
+          tertiaryColor: '#252525'
+        }
+      });
+    </script>
     <!-- Icon -->
     <link rel="stylesheet" href="style.css" />
     <title>SANNITH</title>
@@ -381,6 +398,72 @@ GROUP BY u.id;
           <h1 data-aos="zoom-in-down" class="title">Live System Status</h1>
           <div class="status-grid" id="status-grid" data-aos="fade-up">
              <!-- Populated by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- API Documentation -->
+    <section id="api-docs" class="api-docs">
+      <div class="container">
+        <div class="content">
+          <h1 data-aos="zoom-in-down" class="title">API Documentation</h1>
+          <div class="swagger-mock" data-aos="fade-up">
+            <div class="api-endpoint get">
+              <span class="method">GET</span>
+              <span class="path">/api/v1/products</span>
+              <span class="desc">Fetch all listed products</span>
+            </div>
+            <div class="api-endpoint post">
+              <span class="method">POST</span>
+              <span class="path">/api/v1/orders</span>
+              <span class="desc">Create a new order (Auth required)</span>
+            </div>
+            <div class="api-endpoint delete">
+              <span class="method">DELETE</span>
+              <span class="path">/api/v1/products/{id}</span>
+              <span class="desc">Remove a product listing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- The Lab (Micro-Experiments) -->
+    <section id="the-lab" class="the-lab">
+      <div class="container">
+        <div class="content">
+          <h1 data-aos="zoom-in-down" class="title">The Lab</h1>
+          <div class="lab-grid" data-aos="fade-up">
+            <div class="lab-item">
+              <h3>RegEx Tester</h3>
+              <p>Validation logic for secure passwords.</p>
+              <button onclick="alert('RegEx Experiment: /^(?=.*[A-Z])(?=.*\\d).{8,}$/')">View Logic</button>
+            </div>
+            <div class="lab-item">
+              <h3>JSON Converter</h3>
+              <p>Minimalist JSON to CSV parser.</p>
+              <button onclick="alert('Parsing logic optimized for large datasets.')">View Logic</button>
+            </div>
+            <div class="lab-item">
+              <h3>Auth Guard</h3>
+              <p>Middleware for JWT verification.</p>
+              <button onclick="alert('Middleware: verifyToken(req, res, next)')">View Logic</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Radar Chart -->
+    <section id="skill-radar" class="skill-radar">
+      <div class="container">
+        <div class="content">
+          <h1 data-aos="zoom-in-down" class="title">Technical Profile</h1>
+          <div class="chart-container" style="position: relative; height:400px; width:100%; max-width:600px; margin: 0 auto;" data-aos="zoom-in">
+            <canvas id="radarChart"></canvas>
           </div>
         </div>
       </div>

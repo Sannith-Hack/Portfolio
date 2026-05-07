@@ -1575,3 +1575,138 @@ footer .container .link-container .navigation ul li a {
   white-space: pre-wrap;
 }
 
+
+/* --- NEXT-LEVEL PROFESSIONAL SECTIONS --- */
+
+/* Architecture & DB Schema (Mermaid) */
+.architecture, .db-schema { padding: 3rem 0; }
+.mermaid-container {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow-x: auto;
+}
+.mermaid {
+  display: flex;
+  justify-content: center;
+}
+
+/* API Documentation */
+.api-docs { padding: 3rem 0; }
+.swagger-mock {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 900px;
+  margin: 40px auto 0;
+}
+.api-endpoint {
+  background: #1e1e1e;
+  border-radius: 8px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #333;
+  transition: transform 0.2s ease;
+}
+.api-endpoint:hover { transform: translateX(10px); }
+.api-endpoint .method {
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 4px;
+  min-width: 80px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.api-endpoint.get { border-left: 5px solid #61affe; }
+.api-endpoint.get .method { background: #61affe; color: #fff; }
+.api-endpoint.post { border-left: 5px solid #49cc90; }
+.api-endpoint.post .method { background: #49cc90; color: #fff; }
+.api-endpoint.delete { border-left: 5px solid #f93e3e; }
+.api-endpoint.delete .method { background: #f93e3e; color: #fff; }
+.api-endpoint .path { font-family: monospace; color: #fff; flex: 1; }
+.api-endpoint .desc { color: #a0a0a0; font-size: 0.9rem; }
+
+/* The Lab */
+.the-lab { padding: 3rem 0; }
+.lab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+.lab-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.lab-item:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: #fff;
+}
+.lab-item h3 { margin-bottom: 10px; }
+.lab-item p { color: #a0a0a0; margin-bottom: 20px; }
+.lab-item button {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.lab-item button:hover { background: #fff; color: #000; }
+
+/* Radar Chart */
+.skill-radar { padding: 3rem 0; }
+.chart-container {
+  background: rgba(25, 25, 25, 0.6);
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* Fix for Mermaid Diagram Legibility */
+.mermaid svg {
+  height: auto !important;
+  max-width: 100% !important;
+}
+
+.mermaid .node rect, .mermaid .node circle, .mermaid .node ellipse, .mermaid .node polygon, .mermaid .node path {
+  fill: #1e1e1e !important;
+  stroke: #ffffff !important;
+  stroke-width: 2px !important;
+}
+
+.mermaid .node .label {
+  color: #ffffff !important;
+  font-weight: bold !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.mermaid .edgePath .path {
+  stroke: #ffffff !important;
+  stroke-width: 2px !important;
+}
+
+.mermaid .arrowheadPath {
+  fill: #ffffff !important;
+}
+
+/* Ensure nav links are not too crowded */
+header nav {
+  gap: 15px !important;
+}
+
+@media (min-width: 1200px) {
+  header nav {
+    gap: 25px !important;
+  }
+}
+

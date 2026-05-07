@@ -171,3 +171,53 @@ if (terminalInput && terminalBody) {
     terminalBody.addEventListener("click", () => terminalInput.focus());
 }
 
+
+/* --- RADAR CHART LOGIC --- */
+const ctx = document.getElementById("radarChart");
+if (ctx) {
+    new Chart(ctx, {
+        type: "radar",
+        data: {
+            labels: [
+                "Logic & Algorithms",
+                "Security",
+                "Database Design",
+                "API Design",
+                "Data Visualization",
+                "System Architecture"
+            ],
+            datasets: [{
+                label: "Technical Proficiency",
+                data: [90, 85, 95, 88, 80, 82],
+                fill: true,
+                backgroundColor: "rgba(255, 255, 255, 0.2)",
+                borderColor: "rgba(255, 255, 255, 1)",
+                pointBackgroundColor: "rgba(255, 255, 255, 1)",
+                pointBorderColor: "#fff",
+                pointHoverBackgroundColor: "#fff",
+                pointHoverBorderColor: "rgba(255, 255, 255, 1)"
+            }]
+        },
+        options: {
+            elements: {
+                line: {
+                    borderWidth: 3
+                }
+            },
+            scales: {
+                r: {
+                    angleLines: { color: "rgba(255, 255, 255, 0.2)" },
+                    grid: { color: "rgba(255, 255, 255, 0.2)" },
+                    pointLabels: { color: "#fff", font: { size: 12 } },
+                    ticks: { display: false },
+                    suggestedMin: 0,
+                    suggestedMax: 100
+                }
+            },
+            plugins: {
+                legend: { display: false }
+            }
+        }
+    });
+}
+
