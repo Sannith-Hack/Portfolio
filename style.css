@@ -24,6 +24,8 @@ body {
   background-color: #000;
   color: #fff;
   overflow-x: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 #background-video{
@@ -400,7 +402,16 @@ header .mobile-nav {
 
 .project .container .content .projects .card img {
   width: 100%;
-  height: 50%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: top;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: transform 0.5s ease;
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 
 .project .container .content .projects .card .description {
@@ -476,9 +487,16 @@ header .mobile-nav {
 
 .project .projects .card img {
   width: 100%;
-  height: 50%;
+  height: auto;
+  max-height: 400px;
   object-fit: cover;
+  object-position: top;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
   transition: transform 0.4s ease;
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 
 .project .projects .card:hover img {
@@ -1187,9 +1205,16 @@ footer .container .link-container .navigation ul li a {
 
 .project .container .content .projects .card img {
   width: 100%;
-  height: 250px;
+  height: auto;
+  max-height: 400px;
   object-fit: cover;
+  object-position: top;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   transition: transform 0.5s ease;
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 
 .project .container .content .projects .card:hover img {
@@ -1710,3 +1735,22 @@ header nav {
   }
 }
 
+
+
+/* --- CSS GRID/FLEX FIXES FOR CARD HEIGHTS --- */
+.project .container .content .projects .card {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.project .container .content .projects .card .description {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+}
+
+.project .container .content .projects .card .description .action {
+  margin-top: auto !important;
+}
