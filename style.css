@@ -1790,14 +1790,14 @@ header nav {
 .orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(120px);
-  opacity: 0.6;
+  filter: blur(180px);
+  opacity: 0.7;
   animation: floatOrb 12s infinite ease-in-out alternate;
 }
 
 .orb-1 {
-  width: 400px;
-  height: 400px;
+  width: 700px;
+  height: 700px;
   background: rgba(45, 114, 255, 0.4); /* Blue */
   top: -100px;
   left: -100px;
@@ -1805,8 +1805,8 @@ header nav {
 }
 
 .orb-2 {
-  width: 500px;
-  height: 500px;
+  width: 800px;
+  height: 800px;
   background: rgba(138, 43, 226, 0.35); /* Purple */
   bottom: -150px;
   right: -100px;
@@ -1814,8 +1814,8 @@ header nav {
 }
 
 .orb-3 {
-  width: 300px;
-  height: 300px;
+  width: 600px;
+  height: 600px;
   background: rgba(0, 255, 200, 0.25); /* Cyan */
   top: 40%;
   left: 40%;
