@@ -403,9 +403,9 @@ header .mobile-nav {
 .project .container .content .projects .card img {
   width: 100%;
   height: auto;
-  max-height: 400px;
+  
   object-fit: cover;
-  object-position: top;
+  
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   transition: transform 0.5s ease;
@@ -488,9 +488,9 @@ header .mobile-nav {
 .project .projects .card img {
   width: 100%;
   height: auto;
-  max-height: 400px;
+  
   object-fit: cover;
-  object-position: top;
+  
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   transition: transform 0.4s ease;
@@ -1206,9 +1206,9 @@ footer .container .link-container .navigation ul li a {
 .project .container .content .projects .card img {
   width: 100%;
   height: auto;
-  max-height: 400px;
+  
   object-fit: cover;
-  object-position: top;
+  
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   transition: transform 0.5s ease;
@@ -1576,7 +1576,7 @@ footer .container .link-container .navigation ul li a {
   font-family: monospace;
   color: #00ff00;
   min-height: 250px;
-  max-height: 400px;
+  
   overflow-y: auto;
 }
 .terminal-body p { margin-bottom: 10px; color: #fff; }
