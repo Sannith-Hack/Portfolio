@@ -1754,3 +1754,15 @@ header nav {
 .project .container .content .projects .card .description .action {
   margin-top: auto !important;
 }
+
+
+/* --- HERO NAME SOLID TEXT FIX --- */
+.hero .container .content .hero-name-text {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: clamp(3rem, 10vw, 8rem);
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 5px;
+}
