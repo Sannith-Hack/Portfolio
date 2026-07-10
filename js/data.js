@@ -11,12 +11,12 @@ export const profileData = {
         {
             category: "Programming Languages",
             icon: "fas fa-code",
-            items: ["TypeScript", "JavaScript", "Python", "C++", "C", "Rust", "Java", "R", "SQL"]
+            items: ["TypeScript", "JavaScript", "Python", "C++", "C", "Rust", "Java", "SQL"]
         },
         {
             category: "Frontend Technologies",
             icon: "fas fa-laptop-code",
-            items: ["React.js (React 19)", "Next.js", "Vite", "HTML5/CSS3", "Tailwind CSS (v4)", "shadcn/ui", "Three.js", "Zustand"]
+            items: ["React.js (React 19)", "Next.js", "Vite", "HTML5/CSS3", "Tailwind CSS (v4)"]
         },
         {
             category: "Mobile Development",
@@ -101,7 +101,7 @@ export const profileData = {
             techStack: "C++, ESP32 (WiFi), H-Bridge 6-Relay Array, 24V Motors",
             description: "Mechanical material handling prototype focused on a remotely controlled, wireless weightlifting trolley.",
             features: "Management of high-power 24V worm gear motors using custom logic over WiFi, including safety self-locking mechanics.",
-            github: "#",
+            github: "https://github.com/Sannith-Hack/Major-Project-MECH.git",
             image: "assets/images/Trolley.png"
         },
         {
@@ -123,7 +123,7 @@ export const profileData = {
             techStack: "Android Custom ROMs, Magisk/Root, OEM Unlocking",
             description: "Deep system-level modifications on Android devices.",
             features: "Rooted and flashed custom ROMs (Samsung M31) to spoof Pixel identifiers for unlimited cloud storage.",
-            github: "#",
+            github: "https://xdaforums.com/t/rom-15-0-unofficial-evolution-x-10-4-for-galaxy-m31.4724865/",
             image: "assets/images/X.png"
         },
         {
@@ -150,14 +150,6 @@ export const profileData = {
             features: "Secure user authentication, category filtering, and product lifecycle management.",
             github: "https://github.com/Sannith-Hack/EcoHaven.git",
             image: "assets/images/Cleveroad.jpg"
-        },
-        {
-            title: "Demo-3D-Test",
-            techStack: "Three.js, HTML5 localStorage",
-            description: "A unique approach to creating and synchronizing a 3D scene across multiple browser windows for advanced web graphics and state management.",
-            features: "Advanced 3D graphics rendering and multi-window state synchronization.",
-            github: "#",
-            image: "assets/images/Task manager app.jpg"
         }
     ],
 
