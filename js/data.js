@@ -7,16 +7,16 @@ export const profileData = {
         focusAreas: ["Full-stack Web & Mobile Development", "Data Science/Analytics", "Generative AI (LLMs, RAG)", "Hardware-Software Integration (IoT)"]
     },
 
-    skills: [
+        skills: [
         {
             category: "Programming Languages",
             icon: "fas fa-code",
-            items: ["TypeScript", "JavaScript", "Python", "C++", "C", "Rust", "Java", "SQL"]
+            items: ["TypeScript", "JavaScript", "Python", "C++", "C", "Rust", "Java", "R", "SQL"]
         },
         {
             category: "Frontend Technologies",
             icon: "fas fa-laptop-code",
-            items: ["React.js (React 19)", "Next.js", "Vite", "HTML5/CSS3", "Tailwind CSS (v4)"]
+            items: ["React.js (React 19)", "Next.js", "Vite", "HTML5/CSS3", "Tailwind CSS (v4)", "shadcn/ui", "Three.js", "Zustand"]
         },
         {
             category: "Mobile Development",
@@ -41,17 +41,17 @@ export const profileData = {
         {
             category: "AI & Data Science",
             icon: "fas fa-brain",
-            items: ["Prompt Engineering", "AI Agent Tech", "LangChain", "Groq API", "Google Gemini API", "RAG", "Tableau", "Excel", "Data Modeling"]
+            items: ["Prompt Engineering", "AI Agent Tech/Handling", "Looping", "LangChain", "Groq API (Llama 3.3)", "Google Gemini API (gemini-1.5-flash)", "RAG", "Tableau", "Excel", "Data Modeling"]
         },
         {
             category: "DevOps & IT Admin",
             icon: "fas fa-tools",
-            items: ["Docker", "Docker Compose", "GitHub Actions", "Cloudflare Tunnels", "Ventoy", "Custom Android ROMs"]
+            items: ["Docker", "Docker Compose", "GitHub Actions", "Cloudflare Tunnels", "Ventoy", "Custom Android ROMs & Rooting"]
         },
         {
             category: "Hardware & Electronics",
             icon: "fas fa-microchip",
-            items: ["Micro-soldering", "PC Diagnostics", "Custom Li-ion Battery Packs", "Spot Welding", "USB PD", "ESP32", "Arduino"]
+            items: ["Soldering & Micro-soldering (8/10)", "PC Diagnostics & Repair (8/10)", "Custom Li-ion Battery Packs & BMS (12V/48V/60V)", "Spot Welding", "USB Power Delivery (PD) protocols", "ESP32", "Arduino", "Relays/H-Bridges"]
         }
     ],
 
@@ -142,6 +142,7 @@ export const profileData = {
             github: "https://github.com/Sannith-Hack/NCC-Air-Wing.git",
             image: "assets/images/Dashboard - Social Media Analytics.jpg"
         },
+
         {
             title: "EcoHaven",
             techStack: "TypeScript, Firebase",
@@ -149,6 +150,14 @@ export const profileData = {
             features: "Secure user authentication, category filtering, and product lifecycle management.",
             github: "https://github.com/Sannith-Hack/EcoHaven.git",
             image: "assets/images/Cleveroad.jpg"
+        },
+        {
+            title: "Demo-3D-Test",
+            techStack: "Three.js, HTML5 localStorage",
+            description: "A unique approach to creating and synchronizing a 3D scene across multiple browser windows for advanced web graphics and state management.",
+            features: "Advanced 3D graphics rendering and multi-window state synchronization.",
+            github: "#",
+            image: "assets/images/Task manager app.jpg"
         }
     ],
 
