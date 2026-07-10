@@ -26,6 +26,7 @@ body {
   overflow-x: hidden;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  font-family: 'Outfit', sans-serif;
 }
 
 #background-video{
@@ -1765,4 +1766,84 @@ header nav {
   text-align: center;
   margin-bottom: 2rem;
   letter-spacing: 5px;
+}
+
+
+/* --- PREMIUM HERO SECTION --- */
+.hero {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero-bg-orbs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  background: #000000;
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.6;
+  animation: floatOrb 12s infinite ease-in-out alternate;
+}
+
+.orb-1 {
+  width: 400px;
+  height: 400px;
+  background: rgba(45, 114, 255, 0.4); /* Blue */
+  top: -100px;
+  left: -100px;
+  animation-delay: 0s;
+}
+
+.orb-2 {
+  width: 500px;
+  height: 500px;
+  background: rgba(138, 43, 226, 0.35); /* Purple */
+  bottom: -150px;
+  right: -100px;
+  animation-delay: -4s;
+}
+
+.orb-3 {
+  width: 300px;
+  height: 300px;
+  background: rgba(0, 255, 200, 0.25); /* Cyan */
+  top: 40%;
+  left: 40%;
+  animation-delay: -8s;
+}
+
+@keyframes floatOrb {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(30px, -30px) scale(1.1); }
+  100% { transform: translate(-30px, 40px) scale(1.2); }
+}
+
+/* Make SANNITH look stunning */
+.hero .container .content .hero-name-text {
+  font-family: 'Outfit', sans-serif !important;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: clamp(4rem, 12vw, 10rem);
+  text-align: center;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  /* Premium text gradient */
+  background: linear-gradient(135deg, #ffffff 0%, #b3b3b3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 10px 30px rgba(255,255,255,0.05);
+}
+
+.hero .container .content h1 {
+  font-family: 'Outfit', sans-serif;
 }
