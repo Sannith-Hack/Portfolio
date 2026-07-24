@@ -4,8 +4,6 @@ const closeButton = document.getElementById("close-mobile");
 const nav = document.getElementById("nav-mobile");
 const navLinks = document.querySelectorAll(".nav-link");
 
-  });
-});
 
 const getInTouchBtn = document.getElementById("get-in-touch-btn");
 getInTouchBtn.addEventListener("click", () => {
