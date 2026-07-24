@@ -14,7 +14,7 @@ export function renderSkills() {
         card.setAttribute('data-aos-delay', delay.toString());
         
         let itemsHtml = skillCat.items.map(item => {
-            return `<div class="skill-item"><p style="margin: 5px; font-weight: bold;">${item}</p></div>`;
+            return `<div class="skill-item"><p>${item}</p></div>`;
         }).join('');
         
         card.innerHTML = `
@@ -22,7 +22,7 @@ export function renderSkills() {
                 <i class="${skillCat.icon}"></i>
                 <h3>${skillCat.category}</h3>
             </div>
-            <div class="skills-display" style="flex-wrap: wrap; justify-content: center; gap: 10px;">
+            <div class="skills-display">
                 ${itemsHtml}
             </div>
         `;

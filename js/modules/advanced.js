@@ -14,14 +14,14 @@ export function initNavigation() {
     if(closeButton) {
         closeButton.addEventListener("click", () => {
             nav.classList.remove("show");
-            document.body.style.overflow = "auto";
+            document.body.style.overflow = "";
         });
     }
 
     navLinks.forEach((link) => {
         link.addEventListener("click", () => {
             nav.classList.remove("show");
-            document.body.style.overflow = "auto";
+            document.body.style.overflow = "";
         });
     });
 
@@ -29,7 +29,7 @@ export function initNavigation() {
         nav.addEventListener("click", (e) => {
             if (e.target === nav) {
                 nav.classList.remove("show");
-                document.body.style.overflow = "auto";
+                document.body.style.overflow = "";
             }
         });
     }
@@ -134,20 +134,28 @@ export function initTerminal() {
         "sudo": "Sannith is not in the sudoers file. This incident will be reported.",
     };
 
-    if (terminalInput && terminalBody) {
+    if (terminalInput && terminalBody && terminalInputLine) {
         terminalInput.addEventListener("keypress", function (e) {
             if (e.key === "Enter") {
                 const cmd = terminalInput.value.trim().toLowerCase();
                 
+                if (cmd === "clear") {
+                    terminalBody.innerHTML = "";
+                    const clearMsg = document.createElement("p");
+                    clearMsg.textContent = "Terminal cleared. Type 'help' to see available commands.";
+                    terminalBody.appendChild(clearMsg);
+                    terminalBody.appendChild(terminalInputLine);
+                    terminalInput.value = "";
+                    return;
+                }
+
                 const historyLine = document.createElement("div");
                 historyLine.innerHTML = `<span class="prompt">sannith@portfolio:~$</span> <span style="color:#fff">${cmd}</span>`;
                 
                 const responseLine = document.createElement("div");
                 responseLine.className = "terminal-response";
                 
-                if (cmd === "clear") {
-                    terminalBody.innerHTML = "<p>Terminal cleared.</p>";
-                } else if (cmd === "") {
+                if (cmd === "") {
                     responseLine.textContent = "";
                 } else if (commands[cmd]) {
                     responseLine.textContent = commands[cmd];
@@ -155,10 +163,8 @@ export function initTerminal() {
                     responseLine.textContent = `bash: ${cmd}: command not found`;
                 }
                 
-                if(cmd !== "clear") {
-                    terminalBody.insertBefore(historyLine, terminalInputLine);
-                    terminalBody.insertBefore(responseLine, terminalInputLine);
-                }
+                terminalBody.insertBefore(historyLine, terminalInputLine);
+                terminalBody.insertBefore(responseLine, terminalInputLine);
                 
                 terminalInput.value = "";
                 terminalBody.scrollTop = terminalBody.scrollHeight;
