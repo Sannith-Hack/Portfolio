@@ -4,47 +4,53 @@ export function initNavigation() {
     const nav = document.getElementById("nav-mobile");
     const navLinks = document.querySelectorAll(".nav-link");
 
+    const closeNav = () => {
+        if (nav) nav.classList.remove("show");
+        document.body.style.overflow = "";
+    };
+
     if(menu) {
         menu.addEventListener("click", () => {
-            nav.classList.add("show");
+            if (nav) nav.classList.add("show");
             document.body.style.overflow = "hidden";
         });
     }
 
     if(closeButton) {
-        closeButton.addEventListener("click", () => {
-            nav.classList.remove("show");
-            document.body.style.overflow = "";
-        });
+        closeButton.addEventListener("click", closeNav);
     }
 
     navLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-            nav.classList.remove("show");
-            document.body.style.overflow = "";
-        });
+        link.addEventListener("click", closeNav);
     });
 
     if(nav) {
         nav.addEventListener("click", (e) => {
             if (e.target === nav) {
-                nav.classList.remove("show");
-                document.body.style.overflow = "";
+                closeNav();
             }
         });
     }
 
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+            closeNav();
+        }
+    });
+
     const showWorkBtn = document.getElementById("show-work-btn");
     if(showWorkBtn) {
         showWorkBtn.addEventListener("click", () => {
-            document.getElementById("project").scrollIntoView({ behavior: "smooth" });
+            const projSec = document.getElementById("project");
+            if (projSec) projSec.scrollIntoView({ behavior: "smooth" });
         });
     }
 
     const getInTouchBtn = document.getElementById("get-in-touch-btn");
     if(getInTouchBtn) {
         getInTouchBtn.addEventListener("click", () => {
-            document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+            const contactSec = document.getElementById("contact");
+            if (contactSec) contactSec.scrollIntoView({ behavior: "smooth" });
         });
     }
 }
