@@ -44,3 +44,21 @@ As a static web project, there is no build step required. However, because it ut
 - `js/data.js`: The central data object holding the user's professional profile, projects, and skills.
 - `js/modules/`: Directory containing modular scripts handling specific UI features and renders (`about.js`, `projects.js`, `skills.js`, `certifications.js`, `advanced.js`).
 - `README.md`: High-level summary for repository hosting.
+
+## Recent Updates & Session Enhancements
+
+### 1. Visual Certificate & Achievement Cards
+- **UI Redesign:** Replaced legacy small badge-style items with **large, visual certificate cards** matching the project section's glassmorphism style.
+- **Card Hierarchy:** Large image area top (`object-fit: cover`, `object-position: top`), type pill & date meta, title, organization, description, tech chips, and action buttons.
+- **Image Placeholder System:** Integrated dynamic `onerror` fallback mechanism. Displays a high-tech "Image Coming Soon" placeholder whenever a certificate asset is pending, preventing broken image icons.
+- **Lightbox Preview Modal:** Built an interactive dialog (`#cert-lightbox-modal`) for inspecting certificate credentials directly on the site.
+
+### 2. Assets & Directory Organization
+- Created `assets/certificates/` for document preview images.
+- Created `assets/achievements/` for hardware and project showcase media.
+
+### 3. Portfolio Content Additions
+- **FutureSkills Prime 2.0 / C-DAC Mohali Bootcamp:** Added Full-Stack Mobile App Development using Flutter and REST APIs certificate to `certifications`.
+- **3D Printer Enclosure Monitor:** Added NodeMCU ESP8266-based IoT monitoring system with real-time temperature/humidity tracking, LittleFS persistent config, and Wi-Fi dashboard to `projects`.
+- **Navigation:** Added dedicated "Certifications" link to desktop navigation bar and mobile drawer menu.
+

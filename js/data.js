@@ -150,6 +150,127 @@ export const profileData = {
             features: "Secure user authentication, category filtering, and product lifecycle management.",
             github: "https://github.com/Sannith-Hack/EcoHaven.git",
             image: "assets/images/Cleveroad.jpg"
+        },
+        {
+            title: "3D Printer Enclosure Monitor",
+            techStack: "IoT, ESP8266, NodeMCU, Arduino, DHT11, Wi-Fi, REST API, Web Dashboard, LittleFS, Firmware, Electronics",
+            description: "An ESP8266 (NodeMCU)-based IoT system designed to monitor and protect the environment inside a 3D printer enclosure through real-time temperature and humidity monitoring.",
+            features: "Real-time Temp & Humidity, Wi-Fi Dashboard, Audible/Visual Alarm, Physical Mute, LittleFS Persistent Config, 16x2 LCD, Non-blocking Firmware, Auto AP Mode.",
+            github: "https://github.com/Sannith-Hack",
+            image: "assets/images/3d-printer-enclosure-monitor.jpg"
+        }
+    ],
+
+    certifications: [
+        {
+            title: "Bootcamp on Full-Stack Mobile App Development using Flutter and REST APIs",
+            organization: "FutureSkills Prime 2.0 / C-DAC Mohali",
+            type: "Bootcamp",
+            date: "2026",
+            image: "assets/certificates/flutter-rest-api.jpg",
+            credentialUrl: "https://drive.google.com/file/d/1fIOdtPCSMv8fEqQur1QlOxgMbu__wJwK/view?usp=drive_link",
+            description: "Successfully completed the FutureSkills Prime 2.0 bootcamp on Full-Stack Mobile App Development using Flutter and REST APIs, strengthening skills in cross-platform mobile development, REST API integration, backend communication, and full-stack application development.",
+            technologies: ["Flutter", "REST APIs", "Mobile Development", "Full Stack Development", "API Integration", "Application Development"],
+            buttonText: "View Certificate"
+        },
+        {
+            title: "Google Cloud Innovator & Premium Tier Member",
+            organization: "Google Developer Program / Google Cloud",
+            type: "Technical Achievement",
+            date: "Jan 2026",
+            image: "assets/certificates/google-cloud-innovator.jpg",
+            credentialUrl: "https://cloud.google.com/innovators",
+            description: "Recognized as a Google Cloud Innovator and Premium Tier Member of the Google Developer Program for cloud computing expertise and active participation in developer ecosystems.",
+            technologies: ["Google Cloud", "Google Developers", "Cloud Architecture", "Generative AI"],
+            buttonText: "Open Credential"
+        },
+        {
+            title: "Data Analytics Graduate Certificate",
+            organization: "PI LABS Commons Research Foundation",
+            type: "Certificate",
+            date: "Aug - Nov 2025",
+            image: "assets/certificates/pi-labs-data-analytics.jpg",
+            credentialUrl: "",
+            description: "Graduate certificate program focusing on end-to-end data analytics pipelines, statistical modeling, database queries, and executive data visualization.",
+            technologies: ["Data Analytics", "Python", "SQL", "Data Modeling", "Visualization"],
+            buttonText: "View Certificate"
+        },
+        {
+            title: "5-Day AI Agents Intensive",
+            organization: "Google / Kaggle",
+            type: "Course Completion",
+            date: "Jul 2026",
+            image: "assets/certificates/google-kaggle-ai-agents.jpg",
+            credentialUrl: "https://www.kaggle.com",
+            description: "Intensive deep-dive into multi-agent workflows, tool calling, memory management, and autonomous reasoning loops with Kaggle and Google AI.",
+            technologies: ["Agentic AI", "Google AI", "Kaggle", "LLMs", "Prompt Engineering"],
+            buttonText: "Open Credential"
+        },
+        {
+            title: "Agentic AI Virtual Internship",
+            organization: "Brain O Vision",
+            type: "Internship",
+            date: "Jan 2026",
+            image: "assets/certificates/brain-o-vision-agentic-ai.jpg",
+            credentialUrl: "",
+            description: "Virtual internship focusing on developing intelligent agent frameworks, autonomous web agents, and backend AI tool integrations.",
+            technologies: ["Agentic AI", "Python", "LangChain", "Autonomous Agents"],
+            buttonText: "View Certificate"
+        },
+        {
+            title: "Agentic AI Saksham Program",
+            organization: "NASSCOM / KUCE&T",
+            type: "Program",
+            date: "Nov 2025",
+            image: "assets/certificates/nasscom-agentic-ai.jpg",
+            credentialUrl: "",
+            description: "NASSCOM Saksham initiative certification in Agentic AI architecture, state management, and real-time agent execution environments.",
+            technologies: ["Agentic AI", "NASSCOM", "AI Architecture"],
+            buttonText: "View Certificate"
+        },
+        {
+            title: "Scalable WordPress Hosting on AWS",
+            organization: "Orbit Learning",
+            type: "Training",
+            date: "May - Jun 2025",
+            image: "assets/certificates/aws-wordpress-hosting.jpg",
+            credentialUrl: "",
+            description: "Hands-on cloud architecture training building high-availability, fault-tolerant WordPress hosting platforms on Amazon Web Services.",
+            technologies: ["AWS", "Cloud Hosting", "WordPress", "DevOps", "LAMP Stack"],
+            buttonText: "View Certificate"
+        },
+        {
+            title: "Cybersecurity Analyst Job Simulation",
+            organization: "TATA / Forage",
+            type: "Simulation",
+            date: "Recent",
+            image: "assets/certificates/tata-cybersecurity.jpg",
+            credentialUrl: "https://www.theforage.com",
+            description: "Completed practical job simulation in identity and access management (IAM), vulnerability assessment, and threat mitigation strategies.",
+            technologies: ["Cybersecurity", "IAM", "Security Auditing", "TATA"],
+            buttonText: "Open Credential"
+        },
+        {
+            title: "Data Analytics Job Simulation",
+            organization: "Deloitte / Forage",
+            type: "Simulation",
+            date: "Nov 2025",
+            image: "assets/certificates/deloitte-data-analytics.jpg",
+            credentialUrl: "https://www.theforage.com",
+            description: "Simulated corporate data analysis, cleaning raw datasets, building telemetry dashboards, and presenting executive business insights.",
+            technologies: ["Data Analytics", "Deloitte", "Excel", "Data Cleaning"],
+            buttonText: "Open Credential"
+        },
+        {
+            title: "Data Science & Analytics",
+            organization: "Proxenix",
+            type: "Internship Offer",
+            date: "Dec 2025",
+            image: "assets/certificates/proxenix-data-science.jpg",
+            credentialUrl: "",
+            description: "Data Science internship program focused on statistical modeling, exploratory data analysis, and scalable data pipeline development.",
+            technologies: ["Data Science", "Analytics", "Python", "Machine Learning"],
+            buttonText: "View Certificate"
         }
     ],
 
