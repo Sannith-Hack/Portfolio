@@ -162,6 +162,7 @@ export const profileData = {
     ],
 
     certifications: [
+        
         {
             title: "Bootcamp on Full-Stack Mobile App Development using Flutter and REST APIs",
             organization: "FutureSkills Prime 2.0 / C-DAC Mohali",
@@ -174,17 +175,6 @@ export const profileData = {
             buttonText: "View Certificate"
         },
         {
-            title: "Google Cloud Innovator & Premium Tier Member",
-            organization: "Google Developer Program / Google Cloud",
-            type: "Technical Achievement",
-            date: "Jan 2026",
-            image: "assets/certificates/google-cloud-innovator.jpg",
-            credentialUrl: "https://cloud.google.com/innovators",
-            description: "Recognized as a Google Cloud Innovator and Premium Tier Member of the Google Developer Program for cloud computing expertise and active participation in developer ecosystems.",
-            technologies: ["Google Cloud", "Google Developers", "Cloud Architecture", "Generative AI"],
-            buttonText: "Open Credential"
-        },
-        {
             title: "Data Analytics Graduate Certificate",
             organization: "PI LABS Commons Research Foundation",
             type: "Certificate",
@@ -193,7 +183,88 @@ export const profileData = {
             credentialUrl: "",
             description: "Graduate certificate program focusing on end-to-end data analytics pipelines, statistical modeling, database queries, and executive data visualization.",
             technologies: ["Data Analytics", "Python", "SQL", "Data Modeling", "Visualization"],
+            buttonText: "View Certificate",
+            documentUrl: "assets/certificates/pi-labs-data-analytics.pdf",
+            credentialUrl: "assets/certificates/pi-labs-data-analytics.pdf"
+        },
+        {
+            title: "Scalable WordPress Hosting with LAMP Stack on AWS",
+            organization: "Orbit Learning",
+            type: "Training",
+            date: "May - Jun 2025",
+            image: "assets/certificates/aws-wordpress-hosting.jpg",
+            credentialUrl: "",
+            description: "Hands-on cloud architecture training building high-availability, fault-tolerant WordPress hosting platforms on Amazon Web Services.",
+            technologies: ["AWS", "Cloud Hosting", "WordPress", "DevOps", "LAMP Stack"],
+            buttonText: "View Certificate",
+            documentUrl: "assets/certificates/aws-wordpress-hosting.pdf",
+            credentialUrl: "assets/certificates/aws-wordpress-hosting.pdf"
+        },
+        {
+            id: "dcs-2024",
+            title: "Certificate of Appreciation – Digital Citizen Summit 2024",
+            organization: "Digital Citizen Summit / CNX Asia-Pacific / T-Hub",
+            type: "Certificate of Appreciation",
+            date: "2024",
+            image: "assets/certificates/digital-citizen-summit-2024.jpg",
+            documentUrl: "assets/certificates/digital-citizen-summit-2024.pdf",
+            credentialUrl: "assets/certificates/digital-citizen-summit-2024.pdf",
+            description: "Certificate of Appreciation recognizing participation in the 8th Community Network Xchange Asia-Pacific (CNX) and 6th Digital Citizen Summit (DCS), 2024 focusing on 'Algorithms, AI and Accountability', associated with Digital Empowerment Foundation and T-Hub.",
+            technologies: ["Digital Citizen Summit", "AI", "Algorithms", "Community", "Technology"],
             buttonText: "View Certificate"
+        },
+        {
+            id: "kaggle-python-coder",
+            title: "Python Coder",
+            organization: "Kaggle",
+            type: "Kaggle Achievement",
+            date: "November 2025",
+            image: "assets/certificates/kaggle-python-coder.png",
+            credentialUrl: "https://www.kaggle.com",
+            description: "Verified Kaggle achievement badge awarded to P. Sannith (CSE 42) in November 2025 for demonstrated Python programming expertise and data science skill mastery.",
+            technologies: ["Python", "Kaggle", "Programming", "Data Science"],
+            buttonText: "View Certificate"
+        },
+        {
+            id: "kaggle-community-member",
+            title: "Kaggle Community Member",
+            organization: "Kaggle",
+            type: "Kaggle Achievement",
+            date: "December 26, 2025",
+            image: "assets/certificates/kaggle-community-member.png",
+            credentialUrl: "https://www.kaggle.com",
+            description: "Official Kaggle Community Member recognition certificate awarded to P. Sannith (CSE 42) on December 26, 2025 for active participation and contributions in the global Kaggle community.",
+            technologies: ["Kaggle", "Community", "Data Science", "Technology"],
+            buttonText: "View Certificate"
+        },
+        {
+            title: "Kaggle Code Forker",
+            organization: "Kaggle",
+            type: "Kaggle Achievement",
+            date: "2025",
+            image: "assets/certificates/kaggle-code-forker.png",
+            credentialUrl: "https://www.kaggle.com",
+            description: "Kaggle achievement badge recognizing open-source code iteration and notebook forking across machine learning repositories.",
+            technologies: ["Kaggle", "Open Source", "Python", "Code Forking"]
+        },
+        {
+            title: "Kaggle Vampire",
+            organization: "Kaggle",
+            type: "Kaggle Achievement",
+            date: "2025",
+            image: "assets/certificates/kaggle-vampire.png",
+            credentialUrl: "https://www.kaggle.com",
+            description: "Kaggle achievement badge earned during community challenge milestones.",
+            technologies: ["Kaggle", "Community", "Data Science"]
+        },
+        {
+            title: "Google Cloud Innovator & Premium Tier Member",
+            organization: "Google Developer Program / Google Cloud",
+            type: "Technical Achievement",
+            date: "Jan 2026",
+            image: "assets/certificates/google-cloud-innovator.png",
+            description: "Recognized as a Google Cloud Innovator and Premium Tier Member of the Google Developer Program for cloud computing expertise and active participation in developer ecosystems.",
+            technologies: ["Google Cloud", "Google Developers", "Cloud Architecture", "Generative AI"]
         },
         {
             title: "5-Day AI Agents Intensive",
@@ -202,9 +273,8 @@ export const profileData = {
             date: "Jul 2026",
             image: "assets/certificates/google-kaggle-ai-agents.jpg",
             credentialUrl: "https://www.kaggle.com",
-            description: "Intensive deep-dive into multi-agent workflows, tool calling, memory management, and autonomous reasoning loops with Kaggle and Google AI.",
-            technologies: ["Agentic AI", "Google AI", "Kaggle", "LLMs", "Prompt Engineering"],
-            buttonText: "Open Credential"
+            description: "Intensive deep-dive into multi-agent workflows, tool calling, memory management, and autonomous reasoning loops.",
+            technologies: ["Agentic AI", "Google AI", "Kaggle", "LLMs"]
         },
         {
             title: "Agentic AI Virtual Internship",
@@ -213,9 +283,10 @@ export const profileData = {
             date: "Jan 2026",
             image: "assets/certificates/brain-o-vision-agentic-ai.jpg",
             credentialUrl: "",
-            description: "Virtual internship focusing on developing intelligent agent frameworks, autonomous web agents, and backend AI tool integrations.",
-            technologies: ["Agentic AI", "Python", "LangChain", "Autonomous Agents"],
-            buttonText: "View Certificate"
+            description: "Virtual internship focusing on developing intelligent agent frameworks and backend AI tool integrations.",
+            technologies: ["Agentic AI", "Python", "LangChain"],
+            documentUrl: "assets/certificates/brain-o-vision-agentic-ai.pdf",
+            credentialUrl: "assets/certificates/brain-o-vision-agentic-ai.pdf"
         },
         {
             title: "Agentic AI Saksham Program",
@@ -229,17 +300,6 @@ export const profileData = {
             buttonText: "View Certificate"
         },
         {
-            title: "Scalable WordPress Hosting on AWS",
-            organization: "Orbit Learning",
-            type: "Training",
-            date: "May - Jun 2025",
-            image: "assets/certificates/aws-wordpress-hosting.jpg",
-            credentialUrl: "",
-            description: "Hands-on cloud architecture training building high-availability, fault-tolerant WordPress hosting platforms on Amazon Web Services.",
-            technologies: ["AWS", "Cloud Hosting", "WordPress", "DevOps", "LAMP Stack"],
-            buttonText: "View Certificate"
-        },
-        {
             title: "Cybersecurity Analyst Job Simulation",
             organization: "TATA / Forage",
             type: "Simulation",
@@ -248,7 +308,9 @@ export const profileData = {
             credentialUrl: "https://www.theforage.com",
             description: "Completed practical job simulation in identity and access management (IAM), vulnerability assessment, and threat mitigation strategies.",
             technologies: ["Cybersecurity", "IAM", "Security Auditing", "TATA"],
-            buttonText: "Open Credential"
+            buttonText: "Open Credential",
+            documentUrl: "assets/certificates/tata-cybersecurity.pdf",
+            credentialUrl: "assets/certificates/tata-cybersecurity.pdf"
         },
         {
             title: "Data Analytics Job Simulation",
@@ -259,7 +321,9 @@ export const profileData = {
             credentialUrl: "https://www.theforage.com",
             description: "Simulated corporate data analysis, cleaning raw datasets, building telemetry dashboards, and presenting executive business insights.",
             technologies: ["Data Analytics", "Deloitte", "Excel", "Data Cleaning"],
-            buttonText: "Open Credential"
+            buttonText: "Open Credential",
+            documentUrl: "assets/certificates/deloitte-data-analytics.pdf",
+            credentialUrl: "assets/certificates/deloitte-data-analytics.pdf"
         },
         {
             title: "Data Science & Analytics",
@@ -270,6 +334,21 @@ export const profileData = {
             credentialUrl: "",
             description: "Data Science internship program focused on statistical modeling, exploratory data analysis, and scalable data pipeline development.",
             technologies: ["Data Science", "Analytics", "Python", "Machine Learning"],
+            buttonText: "View Certificate",
+            documentUrl: "assets/certificates/proxenix-data-science.pdf",
+            credentialUrl: "assets/certificates/proxenix-data-science.pdf"
+        },
+        {
+            id: "webxcelerate",
+            title: "Certificate of Project Completion – WebXcelerate",
+            organization: "Poditivity – C-iRE, KITSW",
+            type: "Project Completion",
+            date: "March 6–7, 2025",
+            image: "assets/certificates/webxcelerate-project-completion.jpg",
+            documentUrl: "assets/certificates/webxcelerate-project-completion.pdf",
+            credentialUrl: "assets/certificates/webxcelerate-project-completion.pdf",
+            description: "Successfully completed the WebXcelerate project, demonstrating proficiency in Fundamentals of Frontend Web Development and hands-on implementation during the event held on March 6–7, 2025. Organized by Poditivity in collaboration with Centre for Innovation, Research & Entrepreneurship (C-iRE), KITSW.",
+            technologies: ["Frontend Development", "Web Development", "Project", "HTML/CSS/JavaScript"],
             buttonText: "View Certificate"
         }
     ],
@@ -322,7 +401,7 @@ export const profileData = {
             type: "Program"
         },
         {
-            title: "Scalable WordPress Hosting on AWS",
+            title: "Scalable WordPress Hosting with LAMP Stack on AWS",
             company: "Orbit Learning",
             date: "May - Jun 2025",
             type: "Training"

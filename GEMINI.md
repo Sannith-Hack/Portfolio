@@ -62,3 +62,8 @@ As a static web project, there is no build step required. However, because it ut
 - **3D Printer Enclosure Monitor:** Added NodeMCU ESP8266-based IoT monitoring system with real-time temperature/humidity tracking, LittleFS persistent config, and Wi-Fi dashboard to `projects`.
 - **Navigation:** Added dedicated "Certifications" link to desktop navigation bar and mobile drawer menu.
 
+### 4. Unified 4-Certificate Featured Holder
+- **Document & Asset Conversion:** Rendered crisp high-DPI image previews from source PDFs using PyMuPDF (`fitz`), preserved original PDF documents for direct viewing/downloading, and copied PNG achievement badges directly into `assets/certificates/`.
+- **Extensible Badges & Achievements:** Preserved all additional certificates (Kaggle Vampire, Kaggle Code Forker, FutureSkills Prime, NASSCOM, etc.) in `additionalCertifications` with an interactive "View Additional Achievements" modal trigger, keeping the main section focused strictly on 4 featured cards.
+
+
