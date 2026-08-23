@@ -6,6 +6,7 @@ import {
     initNavigation, 
     initSQLPlayground, 
     initSystemStatus, 
+    initLabMicroTools,
     initTerminal, 
     initChart 
 } from './modules/advanced.js';
@@ -21,16 +22,17 @@ document.addEventListener('DOMContentLoaded', () => {
     initNavigation();
     initSQLPlayground();
     initSystemStatus();
+    initLabMicroTools();
     initTerminal();
     initChart();
 
     // Initialize or Refresh AOS after dynamic rendering
     if (typeof AOS !== 'undefined') {
         AOS.init({
-            duration: 800,
-            easing: 'ease-in-out',
+            duration: 700,
+            easing: 'ease-out-cubic',
             once: true,
-            offset: 50
+            offset: 40
         });
         AOS.refresh();
     }

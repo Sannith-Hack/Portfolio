@@ -4,23 +4,43 @@ export function renderSkills() {
     const skillsContainer = document.querySelector('.skills-categories-large');
     if (!skillsContainer) return;
     
-    skillsContainer.innerHTML = ''; // Clear existing
+    skillsContainer.innerHTML = '';
     
     profileData.skills.forEach((skillCat, index) => {
-        const delay = (index % 3) * 100;
+        const delay = (index % 4) * 80;
         const card = document.createElement('div');
-        card.className = 'category-card';
-        card.setAttribute('data-aos', 'flip-left');
+        card.className = `category-card accent-${skillCat.accent || 'indigo'}`;
+        card.setAttribute('data-aos', 'fade-up');
         card.setAttribute('data-aos-delay', delay.toString());
         
         let itemsHtml = skillCat.items.map(item => {
-            return `<div class="skill-item"><p>${item}</p></div>`;
+            const isSvg = typeof item === 'object' && item.icon && item.icon.endsWith('.svg');
+            const iconHtml = typeof item === 'object' 
+                ? (isSvg ? `<img src="${item.icon}" alt="${item.name}" class="skill-icon-img" />` : `<i class="${item.icon} skill-icon-fa"></i>`)
+                : '<i class="fas fa-code"></i>';
+            const name = typeof item === 'object' ? item.name : item;
+            const level = typeof item === 'object' && item.level ? `<span class="skill-level">${item.level}</span>` : '';
+
+            return `
+                <div class="skill-item">
+                    ${iconHtml}
+                    <div class="skill-info">
+                        <span class="skill-name">${name}</span>
+                        ${level}
+                    </div>
+                </div>
+            `;
         }).join('');
         
         card.innerHTML = `
             <div class="category-header">
-                <i class="${skillCat.icon}"></i>
-                <h3>${skillCat.category}</h3>
+                <div class="category-icon-wrap">
+                    <i class="${skillCat.icon}"></i>
+                </div>
+                <div>
+                    <h3>${skillCat.category}</h3>
+                    <span class="category-count">${skillCat.items.length} Technologies</span>
+                </div>
             </div>
             <div class="skills-display">
                 ${itemsHtml}

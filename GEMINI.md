@@ -90,8 +90,9 @@ portfolio/
 - **Name:** P. Sannith (Pasunooti Sannith)
 - **Role:** Full-Stack Engineer, Backend Architect & Data Analyst
 - **Education:** B.Tech in CSE (4th Year), Kakatiya University College of Engineering & Technology (KUCET), 2023 - 2027.
-- **Placement:** BrightLine Management Solutions (Technical Role, CTC: 2.4 - 3.0 LPA, Onboarding July 2026).
+- **Placement:** 10000 Coders (SRA EduTech Pvt Ltd) (Software Developer / Full Stack Intern, Starting Package: 3.0+ LPA, Offer Date: August 21, 2026).
 - **Coding Streak:** 440+ continuous days of active code commits.
+- **Known Languages:** Hindi (Expert), English (Intermediate), Telugu (Intermediate).
 
 ### 2. 9 Comprehensive Skill Categories
 1. **Programming Languages:** TypeScript, JavaScript, Python, C++, C, Rust, Java, SQL.

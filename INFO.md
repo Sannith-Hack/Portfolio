@@ -16,6 +16,10 @@
 - **YouTube:** [@Ronnyroy](https://www.youtube.com/@Ronnyroy)
 - **Instagram:** [@sunebhai_mpc](https://www.instagram.com/sunebhai_mpc/)
 - **Coding Consistency:** **440+ Consecutive Days Coding Streak** on GitHub
+- **Known Spoken Languages:**
+  - **Hindi:** Expert (Native / Fluent)
+  - **English:** Intermediate (Professional Working Proficiency)
+  - **Telugu:** Intermediate (Conversational)
 
 ---
 
@@ -47,11 +51,15 @@
 - **Intermediate (MPC - Mathematics, Physics, Chemistry) (2021 - 2023)**
   - **Institution:** Geesukunda Junior College, Telangana.
 
-### Campus Placement
-- **Company:** **BrightLine Management Solutions**
-  - **Role:** Technical Role
-  - **CTC:** 2.4 - 3.0 LPA
-  - **Status:** Selected via KUCET Campus Recruitment (2027 Batch). Onboarding begins July 2026 (includes 45-day technical training + 1-month on-the-job training).
+### Placement & Training Offer
+- **Company / Organization:** **10000 Coders (SRA EduTech Pvt Ltd)**
+  - **Location:** MIG 214, 2nd Floor, KPHB, Kukatpally, Hyderabad, 500072
+  - **Role:** Software Developer / Full Stack Developer (Internship & Training Program)
+  - **CTC / Package:** Starting Package 3.0+ LPA (with higher packages based on company norms)
+  - **Offer Date:** 21 August 2026
+  - **Status:** Selected via 10000 Coders Placement Drive • Offer Letter Confirmed
+  - **Program Overview:** Comprehensive Internship & Training Program covering structured technical training, mentorship, and real-time project support leading to direct placement opportunities with partnered organizations.
+  - **Document:** `assets/certificates/10000-coders-internship-offer.pdf`
 
 ---
 
@@ -222,22 +230,23 @@
 
 | # | Credential / Program | Issuing Organization | Date | Category | Document / Verification Link |
 |---|---|---|---|---|---|
-| 1 | **Full-Stack Mobile App Dev using Flutter & REST APIs** | FutureSkills Prime 2.0 / C-DAC Mohali | 2026 | Bootcamp | [Drive Link](https://drive.google.com/file/d/1fIOdtPCSMv8fEqQur1QlOxgMbu__wJwK/view?usp=drive_link) / `assets/certificates/flutter-rest-api.jpg` |
-| 2 | **Data Analytics Graduate Certificate** | PI LABS Commons Research Foundation | Aug - Nov 2025 | Graduate Certificate | `assets/certificates/pi-labs-data-analytics.pdf` / `.jpg` |
-| 3 | **Scalable WordPress Hosting with LAMP Stack on AWS** | Orbit Learning | May - Jun 2025 | Cloud Architecture | `assets/certificates/aws-wordpress-hosting.pdf` / `.jpg` |
-| 4 | **Certificate of Appreciation – Digital Citizen Summit 2024** | DCS / CNX Asia-Pacific / T-Hub / DEF | 2024 | Conference / AI Policy | `assets/certificates/digital-citizen-summit-2024.pdf` / `.jpg` |
-| 5 | **Python Coder Verified Badge** | Kaggle | Nov 2025 | Python / Data Science | [Kaggle Profile](https://www.kaggle.com) / `assets/certificates/kaggle-python-coder.png` |
-| 6 | **Official Kaggle Community Member Recognition** | Kaggle | Dec 26, 2025 | Data Science Community | [Kaggle Profile](https://www.kaggle.com) / `assets/certificates/kaggle-community-member.png` |
-| 7 | **Kaggle Code Forker Badge** | Kaggle | 2025 | Open Source ML | `assets/certificates/kaggle-code-forker.png` |
-| 8 | **Kaggle Vampire Badge** | Kaggle | 2025 | Data Science Milestone | `assets/certificates/kaggle-vampire.png` |
-| 9 | **Google Cloud Innovator & Premium Tier Member** | Google Developer Program / Google Cloud | Jan 2026 / Jul 2024 | Cloud Ecosystem | `assets/certificates/google-cloud-innovator.png` |
-| 10 | **5-Day AI Agents Intensive Course** | Google / Kaggle | Jul 2026 | Agentic AI & LLMs | `assets/certificates/google-kaggle-ai-agents.jpg` |
-| 11 | **Agentic AI Virtual Internship** | Brain O Vision | Jan 2026 | Internship | `assets/certificates/brain-o-vision-agentic-ai.pdf` / `.jpg` |
-| 12 | **Agentic AI Saksham Program** | NASSCOM / KUCE&T | Nov 2025 | AI Architecture | `assets/certificates/nasscom-agentic-ai.jpg` |
-| 13 | **Cybersecurity Analyst Job Simulation** | TATA / Forage | Recent | Security / IAM | `assets/certificates/tata-cybersecurity.pdf` / `.jpg` |
-| 14 | **Data Analytics Job Simulation** | Deloitte / Forage | Nov 2025 | Business Telemetry | `assets/certificates/deloitte-data-analytics.pdf` / `.jpg` |
-| 15 | **Data Science & Analytics Internship Offer** | Proxenix | Dec 2025 | Data Science | `assets/certificates/proxenix-data-science.pdf` / `.jpg` |
-| 16 | **Certificate of Project Completion – WebXcelerate** | Poditivity / C-iRE, KITSW | Mar 6–7, 2025 | Frontend Development | `assets/certificates/webxcelerate-project-completion.pdf` / `.jpg` |
+| 1 | **Internship & Training Offer Letter** | 10000 Coders (SRA EduTech Pvt Ltd) | Aug 21, 2026 | Placement Offer | `assets/certificates/10000-coders-internship-offer.pdf` |
+| 2 | **Full-Stack Mobile App Dev using Flutter & REST APIs** | FutureSkills Prime 2.0 / C-DAC Mohali | 2026 | Bootcamp | [Drive Link](https://drive.google.com/file/d/1fIOdtPCSMv8fEqQur1QlOxgMbu__wJwK/view?usp=drive_link) / `assets/certificates/flutter-rest-api.jpg` |
+| 3 | **Data Analytics Graduate Certificate** | PI LABS Commons Research Foundation | Aug - Nov 2025 | Graduate Certificate | `assets/certificates/pi-labs-data-analytics.pdf` / `.jpg` |
+| 4 | **Scalable WordPress Hosting with LAMP Stack on AWS** | Orbit Learning | May - Jun 2025 | Cloud Architecture | `assets/certificates/aws-wordpress-hosting.pdf` / `.jpg` |
+| 5 | **Certificate of Appreciation – Digital Citizen Summit 2024** | DCS / CNX Asia-Pacific / T-Hub / DEF | 2024 | Conference / AI Policy | `assets/certificates/digital-citizen-summit-2024.pdf` / `.jpg` |
+| 6 | **Python Coder Verified Badge** | Kaggle | Nov 2025 | Python / Data Science | [Kaggle Profile](https://www.kaggle.com) / `assets/certificates/kaggle-python-coder.png` |
+| 7 | **Official Kaggle Community Member Recognition** | Kaggle | Dec 26, 2025 | Data Science Community | [Kaggle Profile](https://www.kaggle.com) / `assets/certificates/kaggle-community-member.png` |
+| 8 | **Kaggle Code Forker Badge** | Kaggle | 2025 | Open Source ML | `assets/certificates/kaggle-code-forker.png` |
+| 9 | **Kaggle Vampire Badge** | Kaggle | 2025 | Data Science Milestone | `assets/certificates/kaggle-vampire.png` |
+| 10 | **Google Cloud Innovator & Premium Tier Member** | Google Developer Program / Google Cloud | Jan 2026 / Jul 2024 | Cloud Ecosystem | `assets/certificates/google-cloud-innovator.png` |
+| 11 | **5-Day AI Agents Intensive Course** | Google / Kaggle | Jul 2026 | Agentic AI & LLMs | `assets/certificates/google-kaggle-ai-agents.jpg` |
+| 12 | **Agentic AI Virtual Internship** | Brain O Vision | Jan 2026 | Internship | `assets/certificates/brain-o-vision-agentic-ai.pdf` / `.jpg` |
+| 13 | **Agentic AI Saksham Program** | NASSCOM / KUCE&T | Nov 2025 | AI Architecture | `assets/certificates/nasscom-agentic-ai.jpg` |
+| 14 | **Cybersecurity Analyst Job Simulation** | TATA / Forage | Recent | Security / IAM | `assets/certificates/tata-cybersecurity.pdf` / `.jpg` |
+| 15 | **Data Analytics Job Simulation** | Deloitte / Forage | Nov 2025 | Business Telemetry | `assets/certificates/deloitte-data-analytics.pdf` / `.jpg` |
+| 16 | **Data Science & Analytics Internship Offer** | Proxenix | Dec 2025 | Data Science | `assets/certificates/proxenix-data-science.pdf` / `.jpg` |
+| 17 | **Certificate of Project Completion – WebXcelerate** | Poditivity / C-iRE, KITSW | Mar 6–7, 2025 | Frontend Development | `assets/certificates/webxcelerate-project-completion.pdf` / `.jpg` |
 
 ---
 

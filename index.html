@@ -3,202 +3,206 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- AOS -->
+    <meta name="description" content="P. Sannith - Full-Stack Engineer, Backend Architect & Data Analyst with 440+ day continuous code streak. Explore projects, certifications, and interactive labs." />
+    <meta name="keywords" content="Sannith, Pasunooti Sannith, Backend Engineer, Full-Stack, Next.js, FastAPI, Agentic AI, PostgreSQL, Supabase, Portfolio" />
+    <meta name="author" content="P. Sannith" />
+    
+    <!-- Open Graph / Meta -->
+    <meta property="og:title" content="P. Sannith | Full-Stack Engineer & Backend Architect" />
+    <meta property="og:description" content="Portfolio of P. Sannith - 440+ day coding streak, 13+ production systems, and live interactive developer tools." />
+    <meta property="og:type" content="website" />
+
+    <title>P. Sannith | Full-Stack Engineer & Backend Architect</title>
+
+    <!-- Google Fonts (Outfit & JetBrains Mono) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- AOS (Animate on Scroll) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Chart.js & Mermaid -->
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script type="module">
-      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-      mermaid.initialize({ 
-        startOnLoad: true, 
-        theme: 'base',
-        themeVariables: {
-          primaryColor: '#1e1e1e',
-          primaryTextColor: '#ffffff',
-          primaryBorderColor: '#ffffff',
-          lineColor: '#ffffff',
-          secondaryColor: '#333333',
-          tertiaryColor: '#252525'
-        }
-      });
-    </script>
-    <!-- Icon -->
-    <link rel="stylesheet" href="style.css?v=2.0" />
-    <title>SANNITH</title>
-      <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css?v=3.0" />
   </head>
   <body>
+    <!-- Top Navigation Header -->
     <header>
       <div class="logo">
-        <a href="/">Sannith</a>
+        <a href="#home">Sannith<span class="logo-accent">.</span></a>
       </div>
 
       <nav>
-        <a href="#home">Home</a>
-        <a href="#home">About</a>
-        <a href="#skill">Skill</a>
-        <a href="#project">Project</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact">Contact</a>
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#project" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#lab" class="nav-link">Lab & Demos</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
 
       <div class="extra-nav">
-        <button id="get-in-touch-btn">Get In Touch</button>
+        <button id="get-in-touch-btn" class="nav-cta-btn">
+          <i class="fas fa-paper-plane"></i> <span>Get In Touch</span>
+        </button>
       </div>
 
-      <div id="menu" class="hamburger-menu">
-        <svg
-          width="35px"
-          height="35px"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M4 18L20 18"
-            stroke="#ffffff"
-            stroke-width="2"
-            stroke-linecap="round"
-          />
-          <path
-            d="M4 12L20 12"
-            stroke="#ffffff"
-            stroke-width="2"
-            stroke-linecap="round"
-          />
-          <path
-            d="M4 6L20 6"
-            stroke="#ffffff"
-            stroke-width="2"
-            stroke-linecap="round"
-          />
+      <div id="menu" class="hamburger-menu" aria-label="Open Navigation Menu">
+        <svg width="28px" height="28px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 6H20M4 12H20M4 18H20" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
 
-      <!-- Mobile Nav -->
+      <!-- Mobile Nav Drawer -->
       <div id="nav-mobile" class="mobile-nav">
-        <div id="close-mobile" class="close">
-          <svg
-            width="800px"
-            height="800px"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <defs>
-              <style>
-                .cls-1 {
-                  fill: none;
-                  stroke: #ffffff;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-width: 2px;
-                }
-              </style>
-            </defs>
-
-            <title />
-
-            <g id="cross">
-              <line class="cls-1" x1="7" x2="25" y1="7" y2="25" />
-
-              <line class="cls-1" x1="7" x2="25" y1="25" y2="7" />
-            </g>
-          </svg>
+        <div id="close-mobile" class="close" aria-label="Close Navigation">
+          <i class="fas fa-times"></i>
         </div>
         <ul>
           <li><a class="nav-link" href="#home">Home</a></li>
-          <li><a class="nav-link" href="#home">About</a></li>
-          <li><a class="nav-link" href="#skill">Skill</a></li>
-          <li><a class="nav-link" href="#project">Project</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#project">Projects</a></li>
           <li><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li><a class="nav-link" href="#lab">Interactive Lab</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
+        <div class="mobile-nav-footer">
+          <a href="assets/Sannith_Resume.pdf" download class="mobile-cv-btn">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
       </div>
     </header>
 
-    
-
-    
-    <!-- Merged Hero/About Section -->
-    <section class="about hero-merged" id="home">
-      <!-- Animated Orbs -->
-      <div class="hero-bg-orbs">
+    <!-- Main Hero Section -->
+    <section class="hero-section" id="home">
+      <!-- Dynamic Floating Glowing Ambient Orbs -->
+      <div class="hero-bg-orbs" aria-hidden="true">
         <div class="orb orb-1"></div>
         <div class="orb orb-2"></div>
         <div class="orb orb-3"></div>
       </div>
 
       <div class="container">
-        <div class="content">
-          <h1 class="hero-name-text" data-aos="fade-down">SANNITH</h1>
-          <h2 class="hero-subtitle" data-aos="zoom-in-up">
-            Delivering Custom Data Analyst and Backend Solutions that <span>Stand Out</span>
+        <div class="hero-content">
+          <div class="status-badge" data-aos="fade-down">
+            <span class="pulse-dot"></span>
+            <span>Open to Backend & Full-Stack Opportunities</span>
+          </div>
+
+          <h1 class="hero-name-text" data-aos="fade-up" data-aos-delay="100">
+            PASUNOOTI SANNITH
+          </h1>
+
+          <h2 class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+            Full-Stack Engineer & Backend Architect building <span class="highlight-cyan">High-Throughput APIs</span>, <span class="highlight-indigo">DevOps</span> & <span class="highlight-purple">Agentic AI Workflows</span>.
           </h2>
 
-          <div class="about-me-wrapper">
-            <div class="about-main" data-aos="fade-right">
-              <div class="profile-card">
-                <div class="image-box">
-                  <img src="assets/images/img.jpg" alt="profile" />
-                </div>
-                <div class="name-role">
-                  <h1>Sannith</h1>
-                  <div class="role">
-                    <h2>BackEnd Developer</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="description-text">
-                <p>
-                  Hi, I'm P. Sannith. I code every day (440+ day streak) and specialize in the "engine room" of applications—backend logic, database optimization, and data processing.
-                  <br /><br />
-                  While I have experience across the full stack (including React/Next.js), my core expertise and passion lie in Backend Engineering and Database Management. I have successfully architected secure authentication systems and managed complex databases using Supabase, PostgreSQL, MySQL, and Microsoft SQL Server.
-                </p>
-              </div>
-              <div class="hero-btns" data-aos="zoom-out">
-            <button id="show-work-btn"><span>Show my Work</span></button>
+          <!-- Hero Metrics Bar -->
+          <div class="hero-metrics-bar" data-aos="fade-up" data-aos-delay="250">
+            <div class="metric-item">
+              <span class="metric-number">440+</span>
+              <span class="metric-label">Day Code Streak</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-number">13+</span>
+              <span class="metric-label">Showcase Systems</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-number">16+</span>
+              <span class="metric-label">Certifications</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-number">Placement</span>
+              <span class="metric-label">10000 Coders (3.0+ LPA)</span>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-btns" data-aos="fade-up" data-aos-delay="300">
+            <button id="show-work-btn" class="primary-btn">
+              <i class="fas fa-layer-group"></i> <span>Explore Projects</span>
+            </button>
+            <a href="#lab" class="secondary-btn">
+              <i class="fas fa-flask"></i> <span>Interactive Lab</span>
+            </a>
             <a href="assets/Sannith_Resume.pdf" download class="download-btn">
               <i class="fas fa-download"></i> <span>Download CV</span>
             </a>
           </div>
-            </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="about-details" data-aos="fade-left">
-              <!-- GitHub Stats -->
-              <div class="github-stats-box">
-                <h3>GitHub Insights</h3>
-                <div class="stats-container">
-                  <div class="stats-card-wrapper">
-                    <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Sannith-Hack&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" onerror="this.src='https://github-readme-stats-git-master-anuraghazra.vercel.app/api?username=Sannith-Hack&show_icons=true&theme=radical&hide_border=true'" />
-                  </div>
-                  <div class="stats-card-wrapper graph-wrapper">
-                    <img src="https://github-readme-activity-graph.vercel.app/graph?username=Sannith-Hack&theme=react-dark&bg_color=1a1a1a&hide_border=true" alt="GitHub Activity Graph" />
-                  </div>
+    <!-- About & Dashboard Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag"><i class="fas fa-user"></i> Engineering Profile</span>
+          <h2 class="title">About Me & Journey</h2>
+          <p class="section-subtitle">Deep dive into my technical background, coding streak, and continuous learning journey.</p>
+        </div>
+
+        <div class="about-me-wrapper">
+          <!-- Left Column: Profile Card & Bio -->
+          <div class="about-main" data-aos="fade-right">
+            <div class="profile-card">
+              <div class="avatar-wrapper">
+                <div class="image-box">
+                  <img src="assets/images/img.jpg" alt="P. Sannith" loading="lazy" />
+                </div>
+                <div class="avatar-ring-glow"></div>
+              </div>
+              <div class="name-role">
+                <h3>P. Sannith</h3>
+                <div class="role-badge">
+                  <i class="fas fa-terminal"></i> Backend Architect & Full-Stack Dev
                 </div>
               </div>
+            </div>
 
-              <!-- Education Timeline -->
-              <div class="education-box">
-                <h3>Academic Journey</h3>
-                <div class="timeline">
-                  <div class="timeline-item">
-                    <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <div class="timeline-content">
-                      <h4>B.Tech in CSE</h4>
-                      <p>KUCE&T (Kakatiya University)</p>
-                      <span>2023 - 2027</span>
-                    </div>
-                  </div>
-                  <div class="timeline-item">
-                    <div class="timeline-icon"><i class="fas fa-school"></i></div>
-                    <div class="timeline-content">
-                      <h4>Intermediate (MPC)</h4>
-                      <p>Geesukunda Junior College</p>
-                      <span>2021 - 2023</span>
-                    </div>
-                  </div>
+            <div class="description-text">
+              <!-- Rendered dynamically by js/modules/about.js -->
+            </div>
+          </div>
+
+          <!-- Right Column: GitHub Telemetry & Journey Timeline -->
+          <div class="about-details" data-aos="fade-left">
+            <!-- GitHub Stats Telemetry -->
+            <div class="glass-box github-stats-box">
+              <div class="box-header">
+                <i class="fab fa-github"></i>
+                <h3>GitHub Telemetry & Streak</h3>
+              </div>
+              <div class="stats-container">
+                <div class="stats-card-wrapper">
+                  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Sannith-Hack&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" loading="lazy" onerror="this.src='https://github-readme-stats-git-master-anuraghazra.vercel.app/api?username=Sannith-Hack&show_icons=true&theme=radical&hide_border=true'" />
                 </div>
+                <div class="stats-card-wrapper graph-wrapper">
+                  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Sannith-Hack&theme=react-dark&bg_color=0f172a&hide_border=true" alt="GitHub Activity Graph" loading="lazy" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Academic & Career Journey Timeline -->
+            <div class="glass-box education-box">
+              <div class="box-header">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Academic & Placement Journey</h3>
+              </div>
+              <div class="timeline">
+                <!-- Rendered dynamically by js/modules/about.js -->
               </div>
             </div>
           </div>
@@ -206,285 +210,228 @@
       </div>
     </section>
 
-    <section id="skill" class="skill">
+    <!-- Technical Skills Section -->
+    <section id="skills" class="skills-section">
       <div class="container">
-        <div class="content">
-          <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
-            Technical Expertise
-          </h1>
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag"><i class="fas fa-microchip"></i> Core Competencies</span>
+          <h2 class="title">Technical Expertise</h2>
+          <p class="section-subtitle">Categorized skills spanning backend architecture, frontend frameworks, cloud infrastructure, AI models, and hardware electronics.</p>
+        </div>
 
-          <div class="skills-categories-large">
-            <div class="category-card" data-aos="flip-left">
-              <div class="category-header">
-                <i class="fas fa-server"></i>
-                <h3>Backend & DB</h3>
-              </div>
-              <div class="skills-display">
-                <div class="skill-item"><img src="assets/icon/java.svg" alt="Java" /><p>Java</p></div>
-                <div class="skill-item"><img src="assets/icon/mysql.svg" alt="MySQL" /><p>MySQL</p></div>
-                <div class="skill-item"><img src="assets/icon/postgresql.svg" alt="PostgreSQL" /><p>PostgreSQL</p></div>
-                <div class="skill-item"><img src="assets/icon/supabase.svg" alt="Supabase" /><p>Supabase</p></div>
-                <div class="skill-item"><img src="assets/icon/Node.js.svg" alt="Node.js" /><p>Node.js</p></div>
-              </div>
-            </div>
-
-            <div class="category-card" data-aos="flip-left" data-aos-delay="100">
-              <div class="category-header">
-                <i class="fas fa-code"></i>
-                <h3>Frontend</h3>
-              </div>
-              <div class="skills-display">
-                <div class="skill-item"><img src="assets/icon/html5.svg" alt="HTML5" /><p>HTML5</p></div>
-                <div class="skill-item"><img src="assets/icon/css3.svg" alt="CSS3" /><p>CSS3</p></div>
-                <div class="skill-item"><img src="assets/icon/javascript.svg" alt="JavaScript" /><p>JS</p></div>
-                <div class="skill-item"><img src="assets/icon/typescript.svg" alt="TypeScript" /><p>TS</p></div>
-                <div class="skill-item"><img src="assets/icon/react.svg" alt="React" /><p>React</p></div>
-              </div>
-            </div>
-
-            <div class="category-card" data-aos="flip-left" data-aos-delay="200">
-              <div class="category-header">
-                <i class="fas fa-tools"></i>
-                <h3>DevOps & Tools</h3>
-              </div>
-              <div class="skills-display">
-                <div class="skill-item"><img src="assets/icon/docker.svg" alt="Docker" /><p>Docker</p></div>
-                <div class="skill-item"><img src="assets/icon/github.svg" alt="GitHub" /><p>GitHub</p></div>
-                <div class="skill-item"><i class="fab fa-linux fa-3x"></i><p>Linux</p></div>
-                <div class="skill-item"><i class="fab fa-aws fa-3x"></i><p>AWS</p></div>
-              </div>
-            </div>
-          </div>
+        <div class="skills-categories-large">
+          <!-- Rendered dynamically by js/modules/skills.js -->
         </div>
       </div>
     </section>
 
-    <section id="project" class="project">
+    <!-- Projects Section -->
+    <section id="project" class="projects-section">
       <div class="container">
         <div class="content">
-          <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
-            Project
-          </h1>
+          <div class="section-header" data-aos="fade-up">
+            <span class="section-tag"><i class="fas fa-code-branch"></i> Engineering Showcase</span>
+            <h2 class="title">Featured Projects</h2>
+            <p class="section-subtitle">Explore 13 complete systems covering Full-Stack Web, AI Agents, Mobile Apps, and IoT Hardware.</p>
+          </div>
 
+          <!-- Filter Tabs will be inserted here dynamically -->
           <div class="projects">
-            <div data-aos="zoom-in-down" data-aos-delay="300" class="card">
-              <img src="assets/images/Cleveroad.jpg" alt="project" />
-
-              <div class="description">
-                <h1>E-commerce Website</h1>
-                <p>
-                  Built the backend logic for a secondhand marketplace with secure auth and product management.
-                </p>
-                <div class="action">
-                  <a href="https://github.com/Sannith-Hack/EcoHaven.git" target="_blank">Github</a>
-                  <a href="#" class="demo-link">Demo</a>
-                </div>
-              </div>
-            </div>
-            <div data-aos="zoom-in-down" data-aos-delay="400" class="card">
-              <img src="assets/images/Dashboard - Social Media Analytics.jpg" alt="project" />
-
-              <div class="description">
-                <h1>NCC Dashboard</h1>
-                <p>
-                  NCC Air Wing Portal: Engineered a student information system using Supabase for real-time database management.
-                </p>
-                <div class="action">
-                  <a href="https://github.com/Sannith-Hack/NCC-Air-Wing.git" target="_blank">Github</a>
-                  <a href="#" class="demo-link">Demo</a>
-                </div>
-              </div>
-            </div>
-            <div data-aos="zoom-in-down" data-aos-delay="500" class="card">
-              <img src="assets/images/Task manager app.jpg" alt="project" />
-
-              <div class="description">
-                <h1>Task Manager</h1>
-                <p>
-                  Manage daily tasks, deadlines, and priorities with a clean interface.
-                </p>
-                <div class="action">
-                  <a href="#">Github</a>
-                  <a href="#" class="demo-link">Demo</a>
-                </div>
-              </div>
-            </div>
-            <div data-aos="zoom-in-down" data-aos-delay="600" class="card">
-              <img src="assets/images/home.png" alt="project" />
-
-              <div class="description">
-                <h1>Student Management System</h1>
-                <p>
-                  A comprehensive platform for managing student records, course enrollments, and academic performance.
-                </p>
-                <div class="action">
-                  <a href="https://github.com/GouthamA15/KUCET_College_Management_System.git" target="_blank">Github</a>
-                  <a href="#" class="demo-link">Demo</a>
-                </div>
-              </div>
-            </div>
+            <!-- Rendered dynamically by js/modules/projects.js -->
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Certifications & Achievements Gallery -->
-    <section id="certifications" class="certifications">
+    <!-- Certifications & Badges Section -->
+    <section id="certifications" class="certifications-section">
       <div class="container">
         <div class="content">
-          <h1 data-aos="zoom-in-down" class="title">Certifications & Achievements</h1>
-          <p data-aos="fade-up" class="section-subtitle">Verified Credentials, Technical Bootcamps & Special Engineering Projects</p>
-          <div class="certifications-grid" id="certifications-grid" data-aos="fade-up">
-            <!-- Dynamically rendered by js/modules/certifications.js -->
+          <div class="section-header" data-aos="fade-up">
+            <span class="section-tag"><i class="fas fa-certificate"></i> Verified Credentials</span>
+            <h2 class="title">Certifications & Achievements</h2>
+            <p class="section-subtitle">16 verified credentials from Google, Kaggle, C-DAC, PI LABS, Deloitte, TATA, and NASSCOM.</p>
+          </div>
+
+          <!-- Filter Tabs will be inserted here dynamically -->
+          <div class="certifications-grid" id="certifications-grid">
+            <!-- Rendered dynamically by js/modules/certifications.js -->
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Technical Deep Dive -->
-    <section id="deep-dive" class="deep-dive">
+    <!-- Interactive Engineering Lab & Showcase -->
+    <section id="lab" class="lab-section">
       <div class="container">
-        <div class="content">
-          <h1 data-aos="zoom-in-down" class="title">How I Solve Problems</h1>
-          <div class="problem-solution-card" data-aos="fade-up">
-            <div class="problem">
-              <h3><i class="fas fa-bug"></i> The Problem: Slow Database Queries</h3>
-              <p>In a recent project, fetching user analytics was taking >2 seconds due to unoptimized joins across 3 large tables (1M+ rows).</p>
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag"><i class="fas fa-flask"></i> Interactive Playground</span>
+          <h2 class="title">The Lab & Engineering Demos</h2>
+          <p class="section-subtitle">Live interactive experiments, query runner, system telemetry, and micro-tools demonstrating clean frontend-backend synergy.</p>
+        </div>
+
+        <div class="lab-dashboard-grid">
+          <!-- 1. Interactive SQL Console -->
+          <div class="lab-card span-2" data-aos="fade-up">
+            <div class="lab-card-header">
+              <div class="lab-header-icon"><i class="fas fa-database"></i></div>
+              <div>
+                <h3>Interactive SQL Console</h3>
+                <p>Query mock relational PostgreSQL instance</p>
+              </div>
             </div>
-            <div class="solution">
-              <h3><i class="fas fa-lightbulb"></i> The Solution: Indexing & Views</h3>
-              <p>I introduced composite indexes on the frequently queried columns and created a materialized view for the analytics dashboard.</p>
-              <pre><code>CREATE MATERIALIZED VIEW user_analytics AS
-SELECT u.id, COUNT(a.action), SUM(p.amount)
+            <div class="console-wrapper">
+              <div class="console-input">
+                <span class="prompt">sannith-db=></span>
+                <select id="sql-query-select" aria-label="Select SQL Query">
+                  <option value="SELECT * FROM projects WHERE type = 'Backend';">SELECT * FROM projects WHERE type = 'Backend';</option>
+                  <option value="SELECT title, tech FROM projects ORDER BY date DESC;">SELECT title, tech FROM projects ORDER BY date DESC;</option>
+                  <option value="SELECT COUNT(*) FROM projects WHERE status = 'Completed';">SELECT COUNT(*) FROM projects WHERE status = 'Completed';</option>
+                </select>
+                <button id="run-sql-btn"><i class="fas fa-play"></i> Execute</button>
+              </div>
+              <div class="console-output" id="sql-output">
+                > Click 'Execute' to parse and execute query in mock engine...
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Live System Status -->
+          <div class="lab-card span-2" data-aos="fade-up" data-aos-delay="100">
+            <div class="lab-card-header">
+              <div class="lab-header-icon"><i class="fas fa-tachometer-alt"></i></div>
+              <div>
+                <h3>Live System Telemetry</h3>
+                <p>Real-time mock API cluster & database pool metrics</p>
+              </div>
+            </div>
+            <div class="status-grid" id="status-grid">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+
+          <!-- 3. RegEx Live Validator -->
+          <div class="lab-card" data-aos="fade-up">
+            <div class="lab-card-header">
+              <div class="lab-header-icon"><i class="fas fa-shield-alt"></i></div>
+              <div>
+                <h3>Live RegEx Validator</h3>
+                <p>Real-time password security rule evaluation</p>
+              </div>
+            </div>
+            <div class="lab-tool-body">
+              <input type="text" id="lab-regex-input" class="lab-input" placeholder="Type password to test rules..." autocomplete="off" />
+              <div class="rules-list">
+                <div id="rule-length" class="rule-item rule-invalid" data-label="At least 8 characters"><i class="fas fa-circle"></i> At least 8 characters</div>
+                <div id="rule-upper" class="rule-item rule-invalid" data-label="Uppercase letter (A-Z)"><i class="fas fa-circle"></i> Uppercase letter (A-Z)</div>
+                <div id="rule-number" class="rule-item rule-invalid" data-label="Numeric digit (0-9)"><i class="fas fa-circle"></i> Numeric digit (0-9)</div>
+                <div id="rule-special" class="rule-item rule-invalid" data-label="Special symbol (!@#$%)"><i class="fas fa-circle"></i> Special symbol (!@#$%)</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. JSON to CSV Converter -->
+          <div class="lab-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="lab-card-header">
+              <div class="lab-header-icon"><i class="fas fa-file-csv"></i></div>
+              <div>
+                <h3>JSON to CSV Parser</h3>
+                <p>Streaming memory-efficient conversion</p>
+              </div>
+            </div>
+            <div class="lab-tool-body">
+              <textarea id="lab-json-input" class="lab-textarea" rows="4">[{"id":1,"name":"PostgreSQL","speed":"Fast"},{"id":2,"name":"FastAPI","speed":"Ultra"}]</textarea>
+              <div class="lab-tool-actions">
+                <button id="lab-convert-btn" class="mini-btn primary"><i class="fas fa-sync-alt"></i> Convert</button>
+                <button id="lab-copy-csv-btn" class="mini-btn"><i class="fas fa-copy"></i> Copy CSV</button>
+              </div>
+              <pre id="lab-csv-output" class="mini-output">id,name,speed&#10;1,PostgreSQL,Fast&#10;2,FastAPI,Ultra</pre>
+            </div>
+          </div>
+
+          <!-- 5. JWT Auth Guard Simulator -->
+          <div class="lab-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="lab-card-header">
+              <div class="lab-header-icon"><i class="fas fa-key"></i></div>
+              <div>
+                <h3>JWT Auth Guard</h3>
+                <p>Role claim parser & signature simulator</p>
+              </div>
+            </div>
+            <div class="lab-tool-body">
+              <div class="role-selector-row">
+                <label for="jwt-role-select">Simulate Role:</label>
+                <select id="jwt-role-select" class="lab-select">
+                  <option value="admin">Admin (Superuser)</option>
+                  <option value="cadet">NCC Cadet</option>
+                  <option value="guest">Guest User</option>
+                </select>
+                <span id="auth-status-badge" class="auth-badge auth-admin">Superuser Verified</span>
+              </div>
+              <pre id="jwt-payload-output" class="mini-output json-output"></pre>
+            </div>
+          </div>
+
+          <!-- 6. Query Optimization Case Study -->
+          <div class="lab-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="lab-card-header">
+              <div class="lab-header-icon"><i class="fas fa-bolt"></i></div>
+              <div>
+                <h3>Query Optimization Deep Dive</h3>
+                <p>Real-world benchmark: >2.0s down to ~15ms</p>
+              </div>
+            </div>
+            <div class="deep-dive-snippet">
+              <div class="metric-comparison">
+                <span class="bad-metric"><i class="fas fa-times-circle"></i> Unindexed Join: ~2,150ms</span>
+                <span class="arrow-icon"><i class="fas fa-arrow-right"></i></span>
+                <span class="good-metric"><i class="fas fa-check-circle"></i> Indexed View: ~14ms</span>
+              </div>
+              <pre class="code-snippet"><code>CREATE MATERIALIZED VIEW mv_user_telemetry AS
+SELECT u.id, u.username, COUNT(l.id) AS logs_count
 FROM users u
-JOIN actions a ON u.id = a.user_id
-GROUP BY u.id;
--- Query time reduced to ~15ms!</code></pre>
+JOIN logs l ON u.id = l.user_id
+GROUP BY u.id, u.username;
+CREATE UNIQUE INDEX idx_mv_user ON mv_user_telemetry (id);</code></pre>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Interactive SQL Playground -->
-    <section id="sql-playground" class="sql-playground">
-      <div class="container">
-        <div class="content">
-          <h1 data-aos="zoom-in-down" class="title">Interactive SQL Console</h1>
-          <p data-aos="fade-up" style="text-align: center; color: #a0a0a0; margin-bottom: 20px;">Try querying my mock 'projects' database!</p>
-          <div class="console-wrapper" data-aos="zoom-in">
-            <div class="console-input">
-              <span class="prompt">user@sannith-db:~#</span>
-              <select id="sql-query-select">
-                <option value="SELECT * FROM projects WHERE type = 'Backend';">SELECT * FROM projects WHERE type = 'Backend';</option>
-                <option value="SELECT title, tech FROM projects ORDER BY date DESC;">SELECT title, tech FROM projects ORDER BY date DESC;</option>
-                <option value="SELECT COUNT(*) FROM projects WHERE status = 'Completed';">SELECT COUNT(*) FROM projects WHERE status = 'Completed';</option>
-              </select>
-              <button id="run-sql-btn">Run Query</button>
+          <!-- 7. Technical Proficiency Radar -->
+          <div class="lab-card" data-aos="fade-up">
+            <div class="lab-card-header">
+              <div class="lab-header-icon"><i class="fas fa-chart-pie"></i></div>
+              <div>
+                <h3>Technical Proficiency Radar</h3>
+                <p>Algorithmic & architectural balance score</p>
+              </div>
             </div>
-            <div class="console-output" id="sql-output">
-              > Ready for query...
+            <div class="chart-container">
+              <canvas id="radarChart"></canvas>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Live System Status (API Mock) -->
-    <section id="system-status" class="system-status">
-      <div class="container">
-        <div class="content">
-          <h1 data-aos="zoom-in-down" class="title">Live System Status</h1>
-          <div class="status-grid" id="status-grid" data-aos="fade-up">
-             <!-- Populated by JS -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- API Documentation -->
-    <section id="api-docs" class="api-docs">
-      <div class="container">
-        <div class="content">
-          <h1 data-aos="zoom-in-down" class="title">API Documentation</h1>
-          <div class="swagger-mock" data-aos="fade-up">
-            <div class="api-endpoint get">
-              <span class="method">GET</span>
-              <span class="path">/api/v1/products</span>
-              <span class="desc">Fetch all listed products</span>
+          <!-- 8. Developer Terminal Emulator -->
+          <div class="lab-card span-2" data-aos="fade-up" data-aos-delay="100">
+            <div class="lab-card-header">
+              <div class="lab-header-icon"><i class="fas fa-terminal"></i></div>
+              <div>
+                <h3>Developer Console (SannithOS Bash)</h3>
+                <p>Type <code>help</code>, <code>about</code>, <code>skills</code>, <code>projects</code>, <code>certs</code> or <code>matrix</code></p>
+              </div>
             </div>
-            <div class="api-endpoint post">
-              <span class="method">POST</span>
-              <span class="path">/api/v1/orders</span>
-              <span class="desc">Create a new order (Auth required)</span>
-            </div>
-            <div class="api-endpoint delete">
-              <span class="method">DELETE</span>
-              <span class="path">/api/v1/products/{id}</span>
-              <span class="desc">Remove a product listing</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-    <!-- The Lab (Micro-Experiments) -->
-    <section id="the-lab" class="the-lab">
-      <div class="container">
-        <div class="content">
-          <h1 data-aos="zoom-in-down" class="title">The Lab</h1>
-          <div class="lab-grid" data-aos="fade-up">
-            <div class="lab-item">
-              <h3>RegEx Tester</h3>
-              <p>Validation logic for secure passwords.</p>
-              <button onclick="alert('RegEx Experiment: /^(?=.*[A-Z])(?=.*\\d).{8,}$/')">View Logic</button>
-            </div>
-            <div class="lab-item">
-              <h3>JSON Converter</h3>
-              <p>Minimalist JSON to CSV parser.</p>
-              <button onclick="alert('Parsing logic optimized for large datasets.')">View Logic</button>
-            </div>
-            <div class="lab-item">
-              <h3>Auth Guard</h3>
-              <p>Middleware for JWT verification.</p>
-              <button onclick="alert('Middleware: verifyToken(req, res, next)')">View Logic</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Radar Chart -->
-    <section id="skill-radar" class="skill-radar">
-      <div class="container">
-        <div class="content">
-          <h1 data-aos="zoom-in-down" class="title">Technical Profile</h1>
-          <div class="chart-container" data-aos="zoom-in">
-            <canvas id="radarChart"></canvas>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Terminal easter egg -->
-    <section id="terminal" class="terminal-section">
-      <div class="container">
-        <div class="content">
-          <h1 data-aos="zoom-in-down" class="title">Developer Console</h1>
-          <div class="terminal-window" data-aos="fade-up">
-            <div class="terminal-header">
-              <span class="btn close"></span>
-              <span class="btn minimize"></span>
-              <span class="btn maximize"></span>
-              <span class="term-title">bash - sannith@portfolio:~</span>
-            </div>
-            <div class="terminal-body" id="terminal-body">
-              <p>Welcome to SannithOS v1.0. Type 'help' to see available commands.</p>
-              <div class="input-line" id="terminal-input-line">
-                <span class="prompt">sannith@portfolio:~$</span>
-                <input type="text" id="terminal-input" autocomplete="off" />
+            <div class="terminal-window">
+              <div class="terminal-header">
+                <span class="btn close"></span>
+                <span class="btn minimize"></span>
+                <span class="btn maximize"></span>
+                <span class="term-title">bash — sannith@portfolio:~ (x86_64)</span>
+              </div>
+              <div class="terminal-body" id="terminal-body">
+                <p class="term-welcome">Welcome to SannithOS v2.4 (GNU/Linux 6.8.0-generic). Type '<span class="term-highlight">help</span>' to view all commands.</p>
+                <div class="input-line" id="terminal-input-line">
+                  <span class="prompt">sannith@portfolio:~$</span>
+                  <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" aria-label="Terminal input" />
+                </div>
               </div>
             </div>
           </div>
@@ -492,134 +439,145 @@ GROUP BY u.id;
       </div>
     </section>
 
-    <section id="contact" class="contact">
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
       <div class="container">
-        <div class="content">
-          <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
-            Contact Me
-          </h1>
-          <div class="contact-wrapper">
-            <div class="contact-info" data-aos="zoom-in-down" data-aos-delay="300">
-              <h3>Contact Information</h3>
-              <p><i class="fas fa-envelope"></i> Email: sunnysunnit@gmail.com</p>
-              <p><i class="fas fa-phone"></i> Phone: +91 7498461916</p>
-              <p><i class="fab fa-github"></i> GitHub: Sannith-Hack</p>
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag"><i class="fas fa-envelope-open-text"></i> Connect</span>
+          <h2 class="title">Get In Touch</h2>
+          <p class="section-subtitle">Feel free to reach out for software engineering opportunities, collaborative projects, or technical consulting.</p>
+        </div>
+
+        <div class="contact-card-wrapper" data-aos="fade-up">
+          <div class="contact-main-card">
+            <div class="contact-header">
+              <div class="contact-avatar-icon"><i class="fas fa-comments"></i></div>
+              <h3>Let's build something scalable together!</h3>
+              <p>I am actively exploring Backend & Full-Stack roles, high-performance database architectures, and agentic AI pipelines.</p>
+            </div>
+
+            <div class="contact-grid">
+              <div class="contact-tile">
+                <div class="tile-icon"><i class="fas fa-envelope"></i></div>
+                <div class="tile-info">
+                  <span class="tile-label">Email Address</span>
+                  <span class="tile-val">sunnysunnit@gmail.com</span>
+                </div>
+                <button class="copy-btn" data-copy="sunnysunnit@gmail.com" title="Copy Email">
+                  <i class="fas fa-copy"></i>
+                </button>
+              </div>
+
+              <div class="contact-tile">
+                <div class="tile-icon"><i class="fas fa-phone-alt"></i></div>
+                <div class="tile-info">
+                  <span class="tile-label">Phone / WhatsApp</span>
+                  <span class="tile-val">+91 7498461916</span>
+                </div>
+                <button class="copy-btn" data-copy="+91 7498461916" title="Copy Phone">
+                  <i class="fas fa-copy"></i>
+                </button>
+              </div>
+
+              <div class="contact-tile">
+                <div class="tile-icon"><i class="fab fa-github"></i></div>
+                <div class="tile-info">
+                  <span class="tile-label">GitHub Profile</span>
+                  <span class="tile-val">github.com/Sannith-Hack</span>
+                </div>
+                <a href="https://github.com/Sannith-Hack" target="_blank" rel="noopener noreferrer" class="link-btn" title="Open GitHub">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+
+              <div class="contact-tile">
+                <div class="tile-icon"><i class="fab fa-linkedin"></i></div>
+                <div class="tile-info">
+                  <span class="tile-label">LinkedIn Profile</span>
+                  <span class="tile-val">linkedin.com/in/sannith-pasunooti</span>
+                </div>
+                <a href="https://www.linkedin.com/in/sannith-pasunooti-183b86302/" target="_blank" rel="noopener noreferrer" class="link-btn" title="Open LinkedIn">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="direct-email-row">
+              <a href="mailto:sunnysunnit@gmail.com?subject=Opportunity%20from%20Portfolio" class="direct-mail-btn">
+                <i class="fas fa-paper-plane"></i> Send Direct Email Message
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-      <div data-aos="fade-up" data-aos-duration="1000" class="container">
-        <div class="profile">
-          <div class="logo">
-            <a href="">Sannith</a>
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Profile summary -->
+          <div class="footer-col brand-col">
+            <div class="footer-logo">
+              <a href="#home">Sannith<span class="logo-accent">.</span></a>
+            </div>
+            <p>
+              Full-Stack Engineer & Backend Architect focused on database query optimization, scalable server architectures, DevOps practices, and agentic AI integrations.
+            </p>
+            <div class="social-links-row">
+              <a href="https://github.com/Sannith-Hack" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon-btn">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/sannith-pasunooti-183b86302/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon-btn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://www.instagram.com/sunebhai_mpc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon-btn">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.youtube.com/@Ronnyroy" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-icon-btn">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
           </div>
 
-          <!-- Short About -->
-          <p>
-            Backend Engineer and Data Analytics enthusiast focused on optimizing complex databases and server-side logic. With practical experience in the LAMP stack and AWS, I bridge the gap between scalable infrastructure and data insights. My technical foundation includes Java, Python, and SQL, applied to build resilient systems like EcoHaven.
-          </p>
+          <!-- Quick Navigation -->
+          <div class="footer-col">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About & Journey</a></li>
+              <li><a href="#skills">Skills Expertise</a></li>
+              <li><a href="#project">Showcase Projects</a></li>
+              <li><a href="#certifications">Certifications</a></li>
+              <li><a href="#lab">Interactive Lab</a></li>
+              <li><a href="#contact">Contact Me</a></li>
+            </ul>
+          </div>
 
-          <!-- Social Media -->
-          <div class="social-media-container">
-            <div class="social-media">
-              <!-- Add Instagram hyperlink here -->
-              <a href="https://www.instagram.com/sunebhai_mpc/" target="_blank">
-                <box-icon color="#fff" type="logo" name="instagram"></box-icon>
-              </a>
-            </div>
-            <div class="social-media">
-              <!-- Add Youtube hyperlink here -->
-              <a href="https://www.youtube.com/@Ronnyroy" target="_blank">
-                <box-icon color="#fff" name="youtube" type="logo"></box-icon>
-              </a>
-            </div>
-            <div class="social-media">
-              <!-- Add Linkedin hyperlink here -->
-              <a href="https://www.linkedin.com/in/sannith-pasunooti-183b86302/" target="_blank">
-                <box-icon type='logo' name='linkedin' color="#fff"></box-icon>
-              </a>
-            </div>
-            <div class="social-media">
-              <!-- Add Github hyperlink here -->
-              <a href="https://github.com/Sannith-Hack" target="_blank">
-                <box-icon type='logo' name='github' color="#fff"></box-icon>
-              </a>
-            </div>
+          <!-- Tech Stack -->
+          <div class="footer-col">
+            <h4>Core Toolchain</h4>
+            <ul>
+              <li><span>PostgreSQL & Supabase</span></li>
+              <li><span>Next.js & React 19</span></li>
+              <li><span>FastAPI & Node.js</span></li>
+              <li><span>LangChain & Groq LLMs</span></li>
+              <li><span>Docker & AWS LAMP</span></li>
+              <li><span>ESP8266 & IoT Circuits</span></li>
+            </ul>
           </div>
         </div>
 
-        <div class="link-container">
-          <div class="information">
-            <h1>Skill</h1>
-            <ul>
-              <li>
-                <a href="#">React.js</a>
-              </li>
-              <li>
-                <a href="#">Next.js</a>
-              </li>
-              <li>
-                <a href="#">Node.js</a>
-              </li>
-              <li>
-                <a href="#">MySQL</a>
-              </li>
-              <li>
-                <a href="#">Typescript</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="resource">
-            <h1>Technology</h1>
-            <ul>
-              <li>
-                <a href="#">Render</a>
-              </li>
-              <li>
-                <a href="#">AWS</a>
-              </li>
-              <li>
-                <a href="#">Linux</a>
-              </li>
-              <li>
-                <a href="#">Github</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="navigation">
-            <h1>Navigation</h1>
-            <ul>
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Skill</a>
-              </li>
-              <li>
-                <a href="#">Project</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
+        <div class="footer-bottom">
+          <p>© 2026 P. Sannith. Engineered with high-performance Vanilla CSS & ES6 Modules.</p>
+          <p class="footer-streak-badge"><i class="fas fa-fire"></i> 440+ Day Coding Streak Active</p>
         </div>
       </div>
     </footer>
 
-    <!-- Box Icon -->
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <!-- AOS -->
+    <!-- AOS Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ES6 Main Orchestrator -->
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
-
