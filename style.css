@@ -3026,3 +3026,87 @@ footer {
     font-size: 0.8rem;
   }
 }
+
+/* ==============================================================================
+   ENGINEERING DOMAINS GRID & CARDS (October 2026 Refresh)
+   ============================================================================== */
+.domains-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 3.5rem;
+  box-sizing: border-box;
+}
+
+.domain-card {
+  background: var(--bg-card, rgba(15, 23, 42, 0.7));
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.08));
+  border-radius: var(--radius-lg, 16px);
+  padding: 22px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-sizing: border-box;
+}
+
+.domain-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(6, 182, 212, 0.4);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+}
+
+.domain-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.domain-card-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-md, 10px);
+  background: rgba(6, 182, 212, 0.12);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: var(--accent-cyan, #06b6d4);
+  flex-shrink: 0;
+}
+
+.domain-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary, #f8fafc);
+  margin: 0;
+}
+
+.domain-card p {
+  font-size: 0.86rem;
+  color: var(--text-secondary, #94a3b8);
+  line-height: 1.5;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.domain-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.domain-tag {
+  font-size: 0.74rem;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #cbd5e1;
+  font-family: 'JetBrains Mono', monospace;
+}

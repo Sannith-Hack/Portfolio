@@ -13,32 +13,44 @@ export function renderAbout() {
             </div>
         `).join('');
 
+        const status = profileData.status || {};
+        const placement = status.campusPlacement || {};
+
         descriptionText.innerHTML = `
             <div class="bio-statement">
                 <p>${profileData.executiveSummary}</p>
             </div>
-            <div class="placement-banner">
-                <div class="placement-icon"><i class="fas fa-briefcase"></i></div>
+            
+            <!-- Career Status & Immediate Availability -->
+            <div class="placement-banner" style="border-left: 4px solid var(--accent-cyan, #06b6d4);">
+                <div class="placement-icon" style="background: rgba(6, 182, 212, 0.15); color: var(--accent-cyan, #06b6d4);">
+                    <i class="fas fa-briefcase"></i>
+                </div>
                 <div class="placement-info">
-                    <span class="placement-badge">Internship & Training Offer</span>
-                    <h4>${profileData.placement.role} @ ${profileData.placement.company}</h4>
-                    <p><strong>Package:</strong> ${profileData.placement.ctc} • <em>${profileData.placement.status}</em></p>
-                    <small>${profileData.placement.highlights}</small>
-                    ${profileData.placement.documentUrl ? `
-                        <div style="margin-top: 8px;">
-                            <a href="${profileData.placement.documentUrl}" target="_blank" rel="noopener noreferrer" class="mini-btn primary" style="font-size: 0.78rem; padding: 4px 12px; border-radius: 20px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
-                                <i class="fas fa-file-pdf"></i> View Offer Letter (PDF)
-                            </a>
-                        </div>
-                    ` : ''}
+                    <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 4px;">
+                        <span class="placement-badge" style="background: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.4);">
+                            <span class="pulse-dot" style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#10b981; margin-right:4px;"></span>
+                            ${status.availability || 'Actively Seeking Opportunities'}
+                        </span>
+                        <span style="font-size: 0.8rem; color: var(--text-muted, #94a3b8);">Immediate Availability</span>
+                    </div>
+                    <h4 style="margin: 4px 0 6px 0; font-size: 1.05rem;">${status.headline || 'Full-Stack, Backend & AI Opportunities'}</h4>
+                    <p style="margin: 0 0 6px 0; font-size: 0.88rem; line-height: 1.5;">${status.details}</p>
+                    
+                    <div style="margin-top: 8px; padding-top: 8px; border-top: 1px dashed rgba(255, 255, 255, 0.1); font-size: 0.82rem; color: var(--text-muted, #94a3b8);">
+                        <i class="fas fa-file-signature" style="color: var(--accent-purple, #a855f7); margin-right: 4px;"></i>
+                        <strong>Campus Placement Record:</strong> Selected as <em>${placement.role}</em> at <em>${placement.company}</em> (${placement.type}). ${placement.note}
+                    </div>
                 </div>
             </div>
+
             <div class="interests-container">
                 <h5><i class="fas fa-terminal"></i> Engineering Passions & Focus Areas:</h5>
                 <ul class="interests-list">
                     ${profileData.interests.map(item => `<li><i class="fas fa-check-circle"></i> <span>${item}</span></li>`).join('')}
                 </ul>
             </div>
+
             <div class="languages-container" style="margin-top: 4px;">
                 <h5><i class="fas fa-language"></i> Known Languages:</h5>
                 <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px;">
@@ -60,6 +72,7 @@ export function renderAbout() {
                     </div>
                     <p>${item.institution}</p>
                     <span class="timeline-period"><i class="far fa-calendar-alt"></i> ${item.period}</span>
+                    ${item.details ? `<p style="font-size: 0.82rem; margin-top: 4px; color: var(--text-muted, #94a3b8);">${item.details}</p>` : ''}
                 </div>
             </div>
         `).join('');

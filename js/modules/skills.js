@@ -1,8 +1,45 @@
 import { profileData } from '../data.js';
 
 export function renderSkills() {
+    renderEngineeringDomains();
+    renderSkillCategories();
+}
+
+function renderEngineeringDomains() {
+    const domainsContainer = document.getElementById('engineering-domains-grid');
+    if (!domainsContainer || !profileData.engineeringDomains) return;
+
+    domainsContainer.innerHTML = '';
+
+    profileData.engineeringDomains.forEach((domain, index) => {
+        const delay = (index % 4) * 70;
+        const card = document.createElement('div');
+        card.className = 'domain-card';
+        card.setAttribute('data-aos', 'fade-up');
+        card.setAttribute('data-aos-delay', delay.toString());
+
+        const techPills = (domain.technologies || []).map(t => `<span class="domain-tag">${t}</span>`).join('');
+
+        card.innerHTML = `
+            <div class="domain-card-header">
+                <div class="domain-card-icon">
+                    <i class="${domain.icon}"></i>
+                </div>
+                <h3>${domain.title}</h3>
+            </div>
+            <p>${domain.description}</p>
+            <div class="domain-tech-tags">
+                ${techPills}
+            </div>
+        `;
+
+        domainsContainer.appendChild(card);
+    });
+}
+
+function renderSkillCategories() {
     const skillsContainer = document.querySelector('.skills-categories-large');
-    if (!skillsContainer) return;
+    if (!skillsContainer || !profileData.skills) return;
     
     skillsContainer.innerHTML = '';
     

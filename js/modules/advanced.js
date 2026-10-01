@@ -142,34 +142,36 @@ export function initSQLPlayground() {
 +----+--------------------------------+-----------+-----------+---------+
 | id | title                          | tech      | type      | status  |
 +----+--------------------------------+-----------+-----------+---------+
-| 1  | KUCET Management System        | Next.js   | FullStack | Online  |
-| 2  | Healthcare AI Agent (RAG)      | FastAPI   | AI/RAG    | Active  |
-| 3  | Keyboard Combat for KUCE-T     | Supabase  | Realtime  | Online  |
-| 4  | 3D Printer Enclosure Monitor   | ESP8266   | IoT       | Deployed|
-| 5  | School Billing ERP             | SQLite3   | FullStack | Ready   |
+| 1  | KUCET College Management Sys   | Next.js16 | FullStack | Online  |
+| 2  | AegisPredict (SIH26184)        | Neo4j/XGB | Graph AI  | Active  |
+| 3  | GPS-CAM (T-DDMS)               | Kotlin/SDK| Mobile    | Deployed|
+| 4  | Anna Canteen TV Monitoring     | Supabase  | Realtime  | Online  |
+| 5  | ZestBite Food Delivery Engine  | Express DI| Backend   | Ready   |
+| 6  | Healthcare AI Agent (RAG)      | FastAPI   | AI Agent  | Active  |
 +----+--------------------------------+-----------+-----------+---------+
-Query executed: 5 rows in set (0.008 sec) • Memory: 1.2 MB`,
+Query executed: 6 rows in set (0.006 sec) • Memory: 1.4 MB`,
 
         "SELECT title, tech FROM projects ORDER BY date DESC;": `
 +------------------------------------+------------------------------------+
 | title                              | tech                               |
 +------------------------------------+------------------------------------+
-| 3D Printer Enclosure Monitor       | ESP8266, DHT11, LittleFS, REST API |
-| Healthcare Monitoring AI Agent     | FastAPI, LangChain, Groq, ChromaDB |
-| TODO_LIST (Solo Leveling System)   | React Native 0.76, Hermes Engine   |
-| Keyboard Combat for KUCE-T         | React, Zustand, Supabase, Express  |
-| MindFlow AI Stress Detector        | HTML5, Gemini API, JWT, Express    |
-| Custom High-Voltage EV Packs       | 18650 Li-ion, Spot Welder, BMS     |
+| KUCET College Management System    | Next.js 16, TiDB, Docker, 665 Tests|
+| AegisPredict Money-Mule Tracing    | Neo4j Graph DB, XGBoost, DBSCAN    |
+| Telangana Display Monitoring (DDMS)| Kotlin Compose, CameraX, Mock GPS  |
+| Anna Canteen TV Monitoring (AP)    | React 18, Supabase Realtime, RLS   |
+| HECAR Clinical Diagnostic Suite    | Python, XGBoost, Streamlit, OCR    |
+| Keyboard Combat for KUCE-T         | React, Supabase Channels, Zustand  |
+| 3D Printer Safety Monitor          | ESP8266, Non-blocking C++, LittleFS|
 +------------------------------------+------------------------------------+
-Query executed: 6 rows in set (0.004 sec)`,
+Query executed: 7 rows in set (0.003 sec)`,
 
         "SELECT COUNT(*) FROM projects WHERE status = 'Completed';": `
 +--------------------------+
-| COUNT(*) (All Completed) |
+| COUNT(*) (All Verified)  |
 +--------------------------+
-| 13                       |
+| 23                       |
 +--------------------------+
-Query executed: 1 row in set (0.002 sec)`
+Query executed: 1 row in set (0.001 sec)`
     };
 
     if (runSqlBtn && sqlQuerySelect && sqlOutput) {
@@ -350,30 +352,33 @@ export function initTerminal() {
 
     const commands = {
         "help": `Available commands:
-  • about       - Executive engineering bio & coding streak
-  • skills      - Backend, Frontend, Cloud & Hardware summary
-  • projects    - Top 13 showcase applications
-  • certs       - 17 verified industry credentials & Kaggle badges
+  • about       - Executive engineering bio, education & career status
+  • skills      - Backend, Frontend, AI/ML, Mobile & Hardware summary
+  • projects    - Flagship showcase systems (23 total)
+  • certs       - 19 verified credentials, residencies & badges
   • languages   - Spoken language proficiency
-  • contact     - Direct email, phone, and social links
+  • contact     - Direct email, phone, and professional links
   • stack       - Complete architectural toolchain
+  • status      - Career status & immediate availability
   • matrix      - Cyber terminal visual stream
   • whoami      - User identity and permissions
   • clear       - Wipe terminal viewport`,
 
-        "about": "P. Sannith (Pasunooti Sannith): Full-Stack Engineer & Backend Architect. Kakatiya University (B.Tech CSE '27). Selected for Software / Full Stack Developer Internship & Training at 10000 Coders (3.0+ LPA). Active 440+ day continuous code streak on GitHub.",
+        "about": "P. Sannith (Pasunooti Sannith): Full-Stack Engineer, AI Systems Developer & Distributed Systems Architect. B.Tech in CSE (8.5 CGPA) from Kakatiya University (KUCE&T 2022–2026). Currently seeking full-time software engineering roles. Active 450+ day continuous code streak on GitHub.",
 
-        "languages": "Spoken Languages:\n  • Hindi: Expert (Native / Fluent)\n  • English: Intermediate (Professional Working)\n  • Telugu: Intermediate (Conversational)",
+        "status": "Current Status: Actively Seeking Opportunities / Open to Work (Available for Software Engineer, Full-Stack, Backend & AI roles).\nCampus Selection on Record: Associate Software Engineer @ BrightLine Technologies (Letter of Intent received; seeking immediate full-time software engineering roles).",
 
-        "skills": "Backend: Node.js, Express, FastAPI, .NET, RESTful APIs, SSE\nDatabases: PostgreSQL, MySQL, Supabase, SQLite3, ChromaDB\nFrontend: React 19, Next.js, TypeScript, Tailwind CSS v4\nAI & Agents: LangChain, Groq (Llama 3.3), Gemini Flash API, RAG\nHardware: Micro-soldering (8/10), EV Battery Packs, ESP8266/ESP32",
+        "languages": "Spoken Languages:\n  • Hindi: Native / Fluent\n  • English: Professional Working Proficiency\n  • Telugu: Conversational Proficiency",
 
-        "projects": "1. KUCET College Management System (Next.js/Docker)\n2. Healthcare AI Agent with RAG (FastAPI/LangChain/Groq)\n3. TODO_LIST Solo Leveling App (React Native Hermes)\n4. Keyboard-Combat Typing Platform (Supabase Realtime)\n5. 3D Printer Enclosure Monitor (IoT/ESP8266)\n6. Wireless Weightlifting Trolley (ESP32/24V Motors)\n7. Custom EV & Backup Battery Packs (12V/48V/60V BMS)",
+        "skills": "Frontend: React 19, Next.js 16 (RSC), TypeScript, Tailwind CSS v4, Zustand\nBackend: Node.js 20+, Express, FastAPI, REST APIs, SSE, DI & Repository Patterns\nDatabases: PostgreSQL, MySQL, TiDB Cloud, Supabase RLS, ChromaDB, Neo4j, Redis\nAI & Agents: LangChain, Groq (Llama 3.3-70B), Gemini Flash, XGBoost, SHAP, Vector RAG\nMobile & IoT: Kotlin Jetpack Compose (SDK 35), React Native Hermes, ESP8266/ESP32, BMS",
 
-        "certs": "• Flutter & REST APIs Bootcamp (C-DAC Mohali 2026)\n• Data Analytics Graduate Certificate (PI LABS)\n• Scalable AWS LAMP Stack Hosting (Orbit Learning)\n• Google Cloud Innovator & Premium Tier (Google Developer Program)\n• Python Coder & Community Member Badges (Kaggle)\n• Agentic AI Saksham & Virtual Internships (NASSCOM & Brain O Vision)",
+        "projects": "Flagship Systems (23 Total):\n  1. KUCET College Management System (Next.js 16, TiDB, Docker, 665 Tests, 303 Admissions)\n  2. AegisPredict: Money-Mule Tracing & Pre-Crime Intervention (SIH26184, Neo4j, XGBoost)\n  3. Telangana Display Monitoring (T-DDMS / GPS-CAM, Native Kotlin Compose, SDK 35)\n  4. Anna Canteen TV Monitoring System (204 Canteens across AP, Supabase Realtime)\n  5. HECAR: Clinical Diagnostic Suite & 10-Yr Stroke Predictor (Python, XGBoost, OCR)\n  6. ZestBite: Decoupled Food Delivery Ecosystem (Express DI, Next.js, Native Android)\n  7. Keyboard Combat for KUCE-T (Live KU Fest 2026 Competitive Typing Platform)\n  8. 3D Printer Enclosure Environmental Safety Monitor (ESP8266, Non-blocking C++)",
 
-        "contact": "Email: sunnysunnit@gmail.com\nPhone: +91 7498461916\nGitHub: https://github.com/Sannith-Hack\nLinkedIn: https://linkedin.com/in/sannith-pasunooti-183b86302/",
+        "certs": "Verified Credentials (19 Total):\n  • Agentic AI Saksham Virtual Internship & Residency — Capabl / NASSCOM (CPBL26PI375)\n  • Flutter & REST APIs Technical Bootcamp — C-DAC Mohali / FutureSkills PRIME\n  • 5-Day AI Agents Intensive Course with Google — Google / Kaggle\n  • Graduate Certificate in Data Analytics — PI LABS Research Foundation\n  • Scalable AWS LAMP Stack Hosting — Orbit Learning\n  • Data Analytics Simulation (Deloitte) & Cybersecurity Simulation (TATA)\n  • HackWithHyderabad (Microsoft Office) & Digital Citizen Summit 2024\n  • Google Cloud Innovator & Kaggle Badges (Python Coder, Forker, Vampire, Community)",
 
-        "stack": "Runtime: Node.js | DB: PostgreSQL, Supabase | AI: Groq, Gemini | Cloud: AWS, Vercel | Style: Tailwind v4",
+        "contact": "Email: sunnysunnit@gmail.com\nPhone: +91 7498461916\nGitHub: https://github.com/Sannith-Hack\nLinkedIn: https://www.linkedin.com/in/sannith-pasunooti-183b86302/",
+
+        "stack": "Runtime: Node.js 20+, Python 3.12 | UI: Next.js 16, React 19, Tailwind v4 | DB: PostgreSQL, TiDB Cloud, Supabase | AI: Groq, Gemini, LangChain | Cloud: AWS, Docker",
         
         "whoami": "guest_recruiter@sannith-portfolio (Permissions: READ, EXECUTE, INTERACT)",
 

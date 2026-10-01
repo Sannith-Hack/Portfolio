@@ -14,11 +14,12 @@ export function renderCertifications() {
         filterNav.className = 'filter-tabs';
         filterNav.innerHTML = `
             <button class="filter-btn active" data-filter="all">All (${profileData.certifications.length})</button>
-            <button class="filter-btn" data-filter="ai">AI & Agentic Systems</button>
-            <button class="filter-btn" data-filter="data">Data Analytics</button>
-            <button class="filter-btn" data-filter="cloud">Cloud & DevOps</button>
-            <button class="filter-btn" data-filter="kaggle">Kaggle Badges</button>
+            <button class="filter-btn" data-filter="internship">Residencies & Internships</button>
+            <button class="filter-btn" data-filter="ai">AI & Agents</button>
             <button class="filter-btn" data-filter="bootcamp">Bootcamps & Courses</button>
+            <button class="filter-btn" data-filter="simulation">Job Simulations & Events</button>
+            <button class="filter-btn" data-filter="kaggle">Badges & Community</button>
+            <button class="filter-btn" data-filter="offers">Offer Letters</button>
         `;
         const contentDiv = certSection.querySelector('.content');
         const gridContainer = certSection.querySelector('#certifications-grid');

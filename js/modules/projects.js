@@ -14,8 +14,10 @@ export function renderProjects() {
         filterNav.className = 'filter-tabs';
         filterNav.innerHTML = `
             <button class="filter-btn active" data-filter="all">All (${profileData.projects.length})</button>
-            <button class="filter-btn" data-filter="fullstack">Full-Stack & Web</button>
-            <button class="filter-btn" data-filter="ai">AI & RAG Agents</button>
+            <button class="filter-btn" data-filter="featured">Featured (${profileData.projects.filter(p => p.featured).length})</button>
+            <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+            <button class="filter-btn" data-filter="ai">AI & Agents</button>
+            <button class="filter-btn" data-filter="backend">Backend & DB</button>
             <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
             <button class="filter-btn" data-filter="iot">IoT & Hardware</button>
             <button class="filter-btn" data-filter="systems">Systems & OS</button>
@@ -48,6 +50,8 @@ function displayProjectsList() {
 
     const filtered = activeCategory === 'all'
         ? profileData.projects
+        : activeCategory === 'featured'
+        ? profileData.projects.filter(p => p.featured)
         : profileData.projects.filter(p => p.category === activeCategory);
 
     filtered.forEach((project, index) => {
