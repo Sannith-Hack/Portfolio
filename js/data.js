@@ -284,36 +284,8 @@ export const profileData = {
             image: "assets/images/home.png",
             description: "Institutional Enterprise College ERP engineered for Kakatiya University College of Engineering and Technology (KUCE&T). Features 5 role-based portals (Superadmin, Principal, Student, Faculty, Staff) with 303 verified admissions finalized in production.",
             features: "Architected 6 multi-stage Docker containers with Redis caching and Socket.IO real-time event broadcasting. Built 78 comprehensive test suites containing 665 automated unit and integration tests. Includes custom admissions workflow, fee tracking, semester grading, and TiDB Cloud distributed MySQL clustering.",
-            github: "https://github.com/Sannith-Hack",
+            github: "https://github.com/GouthamA15/KUCET_College_Management_System",
             date: "2025 – 2026"
-        },
-        {
-            id: "aegispredict",
-            title: "AegisPredict: Graph AI Fraud Detection",
-            badge: "SIH26184 Finalist • Graph AI",
-            category: "ai",
-            categoryLabel: "AI & Graph Analytics",
-            featured: true,
-            techStack: "Neo4j Graph DB, Python FastAPI, XGBoost, LSTM Neural Networks, DBSCAN Haversine Clustering, Scikit-learn",
-            image: "assets/images/MindFlow AI.png",
-            description: "Smart India Hackathon (SIH26184) internal finalist solution for tracing complex money-mule networks and predicting physical cash-out ATM locations before fraudulent withdrawals occur.",
-            features: "Constructed deep graph traversal algorithms across Neo4j to identify synthetic identity rings and mule layering up to 5 hops deep. Combined transaction velocity models with DBSCAN geospatial clustering to predict cash-out ATM clusters within a 90-minute operational interception window.",
-            github: "https://github.com/Sannith-Hack",
-            date: "2026"
-        },
-        {
-            id: "gps-cam",
-            title: "Telangana Display Monitoring (GPS-CAM / T-DDMS)",
-            badge: "Deployed Native Android • SDK 35",
-            category: "mobile",
-            categoryLabel: "Native Mobile & Government System",
-            featured: true,
-            techStack: "Kotlin, Jetpack Compose, CameraX API, Google Play Fused Location, Material Design 3, Signed APK v1.0.0",
-            image: "assets/images/TODO.png",
-            description: "Official Android monitoring application engineered for the Telangana Government to authenticate, inspect, and monitor public government display boards, hoards, and tenders across all 33 districts.",
-            features: "Enforces strict anti-spoofing protocols by detecting and rejecting mock location providers. Implements custom CameraX image capture with real-time GPS coordinate watermarking, bearing calculations, and tamper-resistant cryptographic payload generation for state municipal audit compliance.",
-            github: "https://github.com/Sannith-Hack",
-            date: "2026"
         },
         {
             id: "anna-canteen",
@@ -323,25 +295,11 @@ export const profileData = {
             categoryLabel: "Real-time Telemetry & Audit",
             featured: true,
             techStack: "React 18, Vite, Supabase PostgreSQL, Row-Level Security (RLS), Realtime WebSockets, Automated DB Triggers",
-            image: "assets/images/Dashboard - Social Media Analytics.jpg",
+            image: "assets/images/Anna.png",
             description: "Real-time state-wide display and infrastructure monitoring platform tracking public canteen television screens, live streaming status, and operational metrics across 204 canteen centers in 25 Andhra Pradesh districts.",
             features: "Utilizes Supabase Postgres Realtime event streams and automated audit triggers to track equipment uptime, TV screen power state, and district-level operational compliance without requiring high-polling server overhead.",
             github: "https://github.com/Sannith-Hack",
             date: "2025"
-        },
-        {
-            id: "hecar",
-            title: "HECAR: Clinical Diagnostic & Stroke Predictor",
-            badge: "Dual UI • Streamlit & CustomTkinter",
-            category: "ai",
-            categoryLabel: "Clinical AI & Diagnostics",
-            featured: true,
-            techStack: "Python, Streamlit Cloud, CustomTkinter (8 GUI Screens), XGBoost Classifier, PDF OCR Pipeline, SHAP Explainability",
-            image: "assets/images/img.jpg",
-            description: "Clinical diagnostic decision-support system deployed online at sirwork.streamlit.app with a standalone 8-screen offline desktop GUI for low-connectivity rural health clinics.",
-            features: "Ingests raw Tricog and Bhageerath ECG diagnostic PDFs, extracts key electrophysiological parameters via regex OCR pipelines, and fuses them with patient vitals to predict 10-year stroke and Coronary Artery Disease (CAD) risk with full SHAP feature importance attribution.",
-            github: "https://github.com/Sannith-Hack",
-            date: "2025 – 2026"
         },
         {
             id: "zestbite",
@@ -351,7 +309,7 @@ export const profileData = {
             categoryLabel: "Distributed Microservices & Mobile",
             featured: true,
             techStack: "Node.js 20, Express, Dependency Injection, Next.js Admin Portal, Native Java Android App (MVVM, Retrofit2, Room)",
-            image: "assets/images/Cleveroad.jpg",
+            image: "assets/images/ZestBite.png",
             description: "Complete 3-tier food ordering and restaurant management platform with a decoupled stateless Express backend, responsive Next.js restaurant dashboard, and high-performance native Android customer mobile client.",
             features: "Engineered clean software architecture adhering to Dependency Injection and Repository patterns for zero-leakage business logic. Includes JWT authentication, optimistic client caching with Room DB, and live order state machine transitions.",
             github: "https://github.com/Sannith-Hack",
@@ -365,10 +323,10 @@ export const profileData = {
             categoryLabel: "Computer Vision & Medical ML",
             featured: true,
             techStack: "FastAPI, TensorFlow / Keras, EfficientNetB0, React 19 SPA, MD5 Image Deduplication, Tailwind CSS v4",
-            image: "assets/images/MindFlow AI.png",
+            image: "assets/images/ECG.png",
             description: "Web platform for instantaneous cardiac arrhythmia classification from 12-lead ECG paper trace images, classifying rhythms into Normal Sinus, Atrial Fibrillation, Myocardial Infarction, and Ventricular Ectopy.",
             features: "Trained transfer-learned EfficientNetB0 convolutional neural networks with custom image pre-processing (deskewing, contrast normalization). Utilizes MD5 hash verification to deduplicate image uploads and prevent duplicate model inferences.",
-            github: "https://github.com/Sannith-Hack",
+            github: "https://github.com/GouthamA15/ECG-ML",
             date: "2025"
         },
         {
@@ -382,7 +340,7 @@ export const profileData = {
             image: "assets/images/healthcare-ai-agent.png",
             description: "Autonomous agentic medical monitoring system that evaluates patient laboratory reports, vitals, and prescription histories to deliver contextualized clinical summaries with hard-coded emergency guardrails.",
             features: "Combines dense vector retrieval via ChromaDB with LangChain dynamic tool-calling. Features sub-500ms inference times powered by Groq Llama 3.3-70B and autonomous triage escalation triggers for critical patient metrics.",
-            github: "https://github.com/Sannith-Hack",
+            github: "https://github.com/GouthamA15/healthcare-ai-agent/tree/master",
             date: "2025"
         },
         {
@@ -396,7 +354,7 @@ export const profileData = {
             image: "assets/images/Keyboard-Combat.png",
             description: "High-speed real-time competitive typing platform engineered specifically for Kakatiya University's technical fest (KU Fest 2026), hosting live multiplayer typing battles under extreme concurrent campus loads.",
             features: "Achieved sub-100ms real-time typing synchronization via Supabase Realtime broadcast channels. Implemented anti-cheat keystroke verification, live spectating leaderboards, and zero-latency WPM/accuracy telemetry calculations.",
-            github: "https://github.com/Sannith-Hack",
+            github: "https://github.com/Sannith-Hack/Keyboard-Combat-for-KUCE-T",
             date: "2026"
         },
         {
@@ -410,7 +368,7 @@ export const profileData = {
             image: "assets/images/3d-printer-enclosure-monitor.jpg",
             description: "Physical industrial-grade environmental monitoring unit mounted to a 3D printer enclosure to prevent thermal runaway, detect volatile emissions, and trigger active hardware alarms.",
             features: "Wrote clean non-blocking Arduino C++ utilizing `millis()` state scheduling without blocking delays. Features dual-mode LittleFS web dashboard with PROGMEM emergency flash fallback, active piezo alarm on pin D5, and tactile mute toggle on D6.",
-            github: "https://github.com/Sannith-Hack",
+            github: "https://github.com/Sannith-Hack/IOT-sir",
             date: "2025"
         },
         {
@@ -424,7 +382,7 @@ export const profileData = {
             image: "assets/images/home.png",
             description: "Comprehensive multi-event tournament operations engine developed for KUCE&T to manage technical quizzes, collegiate FIDE rapid chess tournaments, and live campus contests.",
             features: "Features server-authoritative countdown timers to prevent client-side clock tampering, automatic answer autosave every 5 seconds, live scoreboard projection, and strict database isolation via dedicated multi-tenant schemas.",
-            github: "https://github.com/Sannith-Hack",
+            github: "https://github.com/GouthamA15/KUCET_College_Management_System",
             date: "2026"
         },
         {
@@ -438,7 +396,7 @@ export const profileData = {
             image: "assets/images/Trolley.png",
             description: "Heavy-duty electric transport trolley designed for workshop and laboratory material transport with proportional joystick control and high-load torque delivery.",
             features: "Constructed using dual high-torque DC motors driven by custom PWM H-bridge drivers. Implemented ultra-low latency RF joystick communication with emergency dead-man electronic braking.",
-            github: "https://github.com/Sannith-Hack",
+            github: "https://github.com/Sannith-Hack/Major-Project-MECH",
             date: "2025"
         },
         {
@@ -494,7 +452,7 @@ export const profileData = {
             image: "assets/images/Task manager app.jpg",
             description: "Immersive RPG-themed productivity application inspired by the 'Solo Leveling' webtoon system, transforming daily technical tasks, habit building, and workouts into leveling quests.",
             features: "Optimized for Hermes Bytecode compilation with 60fps gesture physics powered by Reanimated 3. Features XP calculation algorithms, dynamic stat scaling, and persistent offline JSON state serialization.",
-            github: "https://github.com/Sannith-Hack",
+            github: "https://github.com/Sannith-Hack/TODO_LIST",
             date: "2025"
         },
         {
@@ -508,22 +466,8 @@ export const profileData = {
             image: "assets/images/MindFlow AI.png",
             description: "Multimodal cognitive stress analysis platform that evaluates textual user responses, typing cadence rhythms, and voice transcripts to estimate anxiety markers and suggest coping interventions.",
             features: "Features lightweight client-side keystroke dynamics tracking and low-latency structured prompt orchestration with Google Gemini Flash for empathetic, personalized mental wellness guidance.",
-            github: "https://github.com/Sannith-Hack",
+            github: "https://github.com/Sannith-Hack/Mini-Project",
             date: "2025"
-        },
-        {
-            id: "transcriptify",
-            title: "Transcriptify Automation Pipeline",
-            badge: "Browser Automation & Speech AI",
-            category: "systems",
-            categoryLabel: "Automation & Speech Recognition",
-            featured: false,
-            techStack: "Python, Playwright (CDP Mode), OpenAI Whisper Large-v3, FFmpeg Audio Stream Slicing, Asyncio",
-            image: "assets/images/Bill.png",
-            description: "End-to-end headless browser automation pipeline that navigates university lecture recordings, intercepts secured audio streams via Chrome DevTools Protocol, and transcribes them into timestamped markdown notes.",
-            features: "Overcomes strict bot-detection mechanisms using CDP session injection. Incorporates chunked FFmpeg audio extraction and local Whisper inference with accurate speaker diarization.",
-            github: "https://github.com/Sannith-Hack",
-            date: "2025 – 2026"
         },
         {
             id: "school-billing",
@@ -536,7 +480,7 @@ export const profileData = {
             image: "assets/images/Bill.png",
             description: "Complete accounting, student fee billing, and inventory tracking software built for private educational institutions, featuring instant thermal receipt generation and balance audits.",
             features: "Utilizes SQLite Write-Ahead Logging (WAL) for reliable concurrent reads and writes. Generates standard 80mm ESC/POS formatted thermal receipts and exports balance sheets directly to Excel/CSV.",
-            github: "https://github.com/Sannith-Hack",
+            github: "https://github.com/Sannith-Hack/Sir-Work",
             date: "2025"
         },
         {
@@ -550,26 +494,30 @@ export const profileData = {
             image: "assets/images/Dashboard - Social Media Analytics.jpg",
             description: "Official cadet information portal developed for the 1(T) Air Squadron National Cadet Corps, streamlining parade attendance tracking, camp enrollment, and aviation study resources.",
             features: "Implements distinct permission tiers for Cadets, Flight Leaders, and Commanding Officers with instant PDF camp clearance certificate generation.",
-            github: "https://github.com/Sannith-Hack",
+            github: "https://github.com/Sannith-Hack/NCC-Air-Wing",
             date: "2024 – 2025"
         },
         {
-            id: "ecohaven",
-            title: "EcoHaven: Sustainable Architecture Hub",
-            badge: "Environmental Tech • Interactive Web",
+            id: "ecohaven-marketplace",
+            title: "EcoHaven Sustainable Marketplace",
+            badge: "Circular Economy",
             category: "fullstack",
-            categoryLabel: "CleanTech & Web Simulation",
+            categoryLabel: "E-Commerce & Backend",
             featured: false,
-            techStack: "JavaScript ES6, Canvas API, Chart.js, CSS3 Custom Properties, LocalStorage Persistence",
-            image: "assets/images/home.png",
-            description: "Interactive clean-technology simulator calculating residential solar array yields, rainwater harvesting capacities, and building thermal insulation savings.",
-            features: "Features real-time mathematical simulation models with responsive Canvas animations demonstrating annual kilowatt-hour offsets and municipal rebate calculations.",
-            github: "https://github.com/Sannith-Hack",
-            date: "2024"
-        },
+            techStack: "TypeScript, Firebase Firestore, Express.js",
+            description: "A sustainable second-hand marketplace platform connecting students for circular commerce and textbook/gadget recycling.",
+            features: "Secure tokenized auth, multi-attribute category filtering, real-time listing status state machine, and verified seller moderation.",
+            github: "https://github.com/Sannith-Hack/EcoHaven.git",
+            image: "assets/images/Cleveroad.jpg",
+            badge: "Circular Economy"
+        }
+    ],
+    // ==============================================================================
+    // SYSTEMS & INFRASTRUCTURE (2 Items)
+    systems: [
         {
-            id: "demo-3d",
-            title: "Demo-3D-Test (Three.js Multi-Window Sync)",
+            id: "3d-multi-window",
+            title: "3D Multi-Window Synchronization",
             badge: "3D WebGL • LocalStorage Inter-Tab Sync",
             category: "systems",
             categoryLabel: "Computer Graphics & Web Protocols",
@@ -592,7 +540,7 @@ export const profileData = {
             image: "assets/images/img.jpg",
             description: "Custom lightweight, zero-bloat developer portfolio website featuring dynamic ES6 module loading, interactive SQL playground, live telemetry simulators, and certificate lightbox inspectors.",
             features: "Scores 95+ on Google Lighthouse across Performance and Accessibility. Contains zero heavy runtime dependencies, engineered purely with semantic HTML5 and vanilla JavaScript.",
-            github: "https://github.com/Sannith-Hack",
+            github: "https://github.com/Sannith-Hack/Portfolio",
             date: "2026"
         }
     ],
@@ -736,6 +684,38 @@ export const profileData = {
             credentialUrl: "assets/certificates/hackwithhyderabad-hackathon.jpg",
             buttonText: "View Hackathon Credential"
         },
+        {
+    id: "achievement-sih-2026",
+    title: "Smart India Hackathon (SIH 2026) Internal Finalist",
+    organization: "Smart India Hackathon / Ministry of Education",
+    date: "2026",
+    type: "Achievement",
+    category: "achievement",
+    categoryLabel: "Hackathon Achievement",
+    
+    description: "Selected as an internal finalist at Smart India Hackathon (SIH 2026) for Problem Statement SIH26184 with AegisPredict, a graph-based AI solution for tracing complex money-mule networks and identifying potential cash-out ATM locations for proactive cybercrime intervention.",
+    
+    technologies: [
+        "Neo4j Graph AI",
+        "Python FastAPI",
+        "XGBoost",
+        "LSTM Neural Networks",
+        "DBSCAN",
+        "Scikit-learn"
+    ],
+    
+    image: "assets/achievements/SIH.png",
+    
+    documentUrl: "assets/achievements/SIH.pdf",
+    credentialUrl: "assets/achievements/SIH.pdf",
+    
+    buttonText: "View SIH Credential",
+    
+    icon: "fas fa-trophy",
+    
+    featured: true
+        },
+        
         {
             id: "cert-digital-summit",
             title: "Digital Citizen Summit 2024",
